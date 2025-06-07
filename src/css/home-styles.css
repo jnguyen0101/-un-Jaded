@@ -5,6 +5,7 @@ body {
     overflow: hidden;
     height: 100vh;
     max-height: 100vh;
+    max-width: 100vw;
     user-select: none;
 }
 

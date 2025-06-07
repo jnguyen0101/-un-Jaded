@@ -4,6 +4,7 @@ body {
     background-color: #254b32;
     overflow: hidden;
     user-select: none;
+    max-width: 100vw;
 }
 
 /* Navigation bar */
