@@ -8,6 +8,7 @@ body {
     user-select: none;
 }
 
+/* Navigation bar */
 .navbar {
     display: flex;
     align-items: center;
@@ -37,10 +38,12 @@ body {
     transition: box-shadow 0.6s ease-in-out, transform 0.4s ease-in-out;
 }
 
-.logo:hover {
-    box-shadow: 0 0 8px 3px rgba(255, 255, 255, 0.25);
-    transform: scale(1.02);
-    cursor: pointer;
+@media (hover: hover) {
+    .logo:hover {
+        box-shadow: 0 0 8px 3px rgba(255, 255, 255, 0.25);
+        transform: scale(1.02);
+        cursor: pointer;
+    }
 }
 
 .nav-links {
@@ -80,9 +83,11 @@ body {
     transition: width 0.3s ease;
 }
 
-.navbar .dropdown:hover .dropbtn::after,
-.navbar .no-drop:hover::after {
-    width: 100%;
+@media (hover: hover) {
+    .navbar .dropdown:hover .dropbtn::after,
+    .navbar .no-drop:hover::after {
+        width: 100%;
+    }
 }
 
 .dropdown {
@@ -103,8 +108,10 @@ body {
     overflow: hidden;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-    cursor: pointer;
+@media (hover: hover) {
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        cursor: pointer;
+    }
 }
 
 .dropdown-content {
@@ -144,17 +151,93 @@ body {
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.dropdown-content a:hover::before {
-    opacity: 1;
-    transform: translateY(-9.75%) translateX(0);
+@media (hover: hover) {
+    .dropdown-content a:hover::before {
+        opacity: 1;
+        transform: translateY(-9.75%) translateX(0);
+    }
 }
 
-.dropdown:hover .dropdown-content {
-    opacity: 1;
-    transform: rotateX(0deg);
-    pointer-events: auto;
+@media (hover: hover) {
+    .dropdown:hover .dropdown-content {
+        opacity: 1;
+        transform: rotateX(0deg);
+        pointer-events: auto;
+    }
 }
 
+/* Hamburger menu for small screens */
+@media (min-width: 768px) {
+    .hamburger,
+    .side-menu {
+        display: none;
+    }
+}
+
+/* Hide nav-links on small screens, show hamburger and enable mobile menu */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none !important;
+    }
+
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 30px;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .side-menu {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100%;
+        background-color: #254b32;
+        box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3);
+        transition: right 0.3s ease;
+        z-index: 1000;
+        padding: 20px;
+        color: white;
+    }
+
+    .side-menu.active {
+        right: 0;
+    }
+
+    .side-menu .menu-header {
+        font-size: 24px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        padding-bottom: 10px;
+    }
+
+    .side-menu ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .side-menu li {
+        padding: 10px 0;
+    }
+
+    .side-menu li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+    }
+
+    .side-menu li a:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Hero section */
 .hero-section {
     margin-top: 0;
     padding: 0 5vw;
@@ -210,10 +293,12 @@ body {
     transition: all 0.2s ease;
 }
 
-.get-involved-btn:hover {
-    background-color: white;
-    color: #254b32;
-    transition: all 0.2s ease;
+@media (hover: hover) {
+    .get-involved-btn:hover {
+        background-color: white;
+        color: #254b32;
+        transition: all 0.2s ease;
+    }
 }
 
 .description-section {
@@ -233,6 +318,7 @@ body {
     gap: 2rem;
 }
 
+/* Footer */
 .footer-description {
     padding-top: 1%;
     font-family: 'Public Sans', sans-serif;
@@ -276,6 +362,7 @@ body {
     font-size: 20px;
 }
 
+/* Splash logo */
 #splash-logo {
     position: fixed;
     inset: 0;
