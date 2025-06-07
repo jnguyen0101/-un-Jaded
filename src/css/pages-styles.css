@@ -2,7 +2,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #254b32;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 100vh;
+
     user-select: none;
 }
 

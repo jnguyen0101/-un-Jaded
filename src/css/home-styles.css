@@ -2,9 +2,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #254b32;
-    overflow: hidden;
-    height: 100vh;
+    height: 100%;
     max-height: 100vh;
+    overflow: hidden;
     user-select: none;
 }
 
@@ -233,17 +233,17 @@ body {
 
 /* Hero section */
 .hero-section {
-    margin-top: 0;
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
     padding: 0 5vw;
     position: relative;
-    height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../../assets/leaf-hero.png);
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 1;
 }
 
 .hero-text {
@@ -340,7 +340,7 @@ body {
     font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 10px;
     letter-spacing: 1px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
     text-transform: uppercase;
 }
 
@@ -368,6 +368,7 @@ body {
     opacity: 1;
     transition: opacity 1s ease;
     pointer-events: none;
+    height: 100vh;
 }
 
 #splash-logo img {
