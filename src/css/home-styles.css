@@ -177,7 +177,7 @@ body {
         position: fixed;
         top: 20px;
         right: 30px;
-        font-size: 30px;
+        font-size: 1vw;
         color: white;
         cursor: pointer;
         z-index: 1001;
@@ -203,7 +203,7 @@ body {
     }
 
     .side-menu .menu-header {
-        font-size: 20px;
+        font-size: 1.5vw;
         font-family: "TS Block Bold", serif;
         margin-bottom: 20px;
         border-bottom: 1px solid rgba(255,255,255,0.2);
@@ -222,7 +222,7 @@ body {
     .side-menu li a {
         color: white;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 1vw;
         display: block;
     }
 
@@ -253,13 +253,13 @@ body {
 
 .hero-text h1 {
     font-family: "TS Block Bold", serif;
-    font-size: 64px;
+    font-size: 4.5vw;
     margin: 0;
 }
 
 .hero-text h2 {
     font-family: "Rubik", serif;
-    font-size: 24px;
+    font-size: 1.6vw;
     font-weight: lighter;
     margin: 1.5rem 0;
 }
@@ -267,7 +267,7 @@ body {
 .hero-text h3 {
     font-family: "Alegreya Sans SC", serif;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1.2vw;
     letter-spacing: 1px;
     margin-bottom: 1rem;
 }
@@ -277,7 +277,7 @@ body {
     bottom: 10%;
     right: 1.5%;
     font-family: "Alegreya Sans SC", serif;
-    font-size: 18px;
+    font-size: 1.25vw;
     text-decoration: none;
     color: white;
     padding: 15px 60px;
@@ -316,7 +316,7 @@ body {
 .footer-description {
     padding-top: 1%;
     font-family: 'Public Sans', sans-serif;
-    font-size: 20px;
+    font-size: 1.3vw;
     font-weight: 200;
     line-height: 1.6;
     max-width: 80%;
@@ -338,14 +338,14 @@ body {
 
 .social-links h5 {
     font-family: 'Alegreya Sans SC', sans-serif;
-    font-size: 10px;
+    font-size: 0.75vw;
     letter-spacing: 1px;
     margin-bottom: 0.4rem;
     text-transform: uppercase;
 }
 
 .social-links a {
-    font-size: 18px;
+    font-size: 1.2vw;
     font-weight: 200;
     color: white;
     text-decoration: none;
@@ -353,7 +353,7 @@ body {
 }
 
 .social-icons a {
-    font-size: 20px;
+    font-size: 1.25vw;
 }
 
 /* Splash logo */
@@ -372,8 +372,8 @@ body {
 }
 
 #splash-logo img {
-    width: 15vw;
-    height: 15vw;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     border: 2px solid white;
     background: white;
