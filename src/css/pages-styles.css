@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #254b32;
+    background-color: #255F38;
     overflow-x: hidden;
     overflow-y: auto;
     min-height: 100vh;
@@ -15,7 +15,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    background-color: #254b32;
+    background-color: #1F7D53;
     height: 60px;
     padding: 10px 40px;
     position: relative;
@@ -207,7 +207,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #254b32;
+    background-color: #1F7D53;
     pointer-events: none;
     z-index: 9999;
     opacity: 1;
