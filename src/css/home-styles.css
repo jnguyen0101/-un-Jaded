@@ -201,6 +201,14 @@ body {
         right: 0;
     }
 
+    .side-menu .menu-header {
+        font-size: 20px;
+        font-family: "TS Block Bold", serif;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        padding-bottom: 10px;
+    }
+
     .side-menu ul {
         list-style: none;
         padding: 0;
