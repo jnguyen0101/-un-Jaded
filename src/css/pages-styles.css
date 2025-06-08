@@ -2,8 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #255F38;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
     min-height: 100vh;
 
     user-select: none;
@@ -171,14 +170,35 @@ body {
 
 
 /* What is UJ? */
+.what-is-UJ-section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.UJ-squiggly-divider svg {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+.UJ-content-left {
+    flex: 1;
+    background-color: #e8e5dc;
+    padding: 2rem;
+}
+
+.UJ-content-right {
+    flex: 1;
+    background-color: #255F38;
+    padding: 2rem;
+}
+
 
 /* Founders */
 
 /* Current Directors */
-.directors-section {
-    background-color: #EAE4D5;
-    height: 100vh;
-}
 
 /* Fade in on page load */
 .fade-in-on-load {
