@@ -62,7 +62,7 @@ body {
 
 @media (max-width: 768px) {
     .logo {
-        top: 40px;
+        top: 20px;
         left: 40px;
         width: 80px;
         height: 80px;
@@ -526,6 +526,11 @@ body {
     transform: scale(1);
     filter: blur(0) brightness(1) drop-shadow(0 0 10px rgba(255, 255, 255, 0.4));
     animation: slow-zoom 4s ease-in-out forwards;
+}
+
+@media (max-width: 768px) {
+    width: 15rem;
+    height: 15rem;
 }
 
 @keyframes slow-zoom {
