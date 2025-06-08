@@ -575,8 +575,10 @@ body {
 }
 
 @media (max-width: 768px) {
-    width: 15rem;
-    height: 15rem;
+    #splash-logo img {
+        width: 15rem;
+        height: 15rem;
+    }
 }
 
 @keyframes slow-zoom {
