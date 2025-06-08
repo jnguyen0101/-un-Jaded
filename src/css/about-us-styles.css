@@ -364,15 +364,36 @@ body {
 }
 
 .UJ-content-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1;
     background-color: #e8e5dc;
     padding: 2rem;
+    height: 100vh;
+}
+
+.UJ-info {
+    text-align: center;
+    margin: 0 auto 25vh;
+    width: 90%;
+
+    h1 {
+        font-family: "TS Block Bold", serif;
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-family: "Rubik", serif;
+        font-size: 1.25rem;
+    }
 }
 
 .UJ-content-right {
     flex: 1;
     background-color: #255F38;
     padding: 2rem;
+    height: 100vh;
 }
 
 /* Founders */
