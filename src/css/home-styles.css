@@ -222,9 +222,9 @@ body {
     .hamburger {
         display: block;
         position: fixed;
-        top: 20px;
-        right: 30px;
-        font-size: 1.75rem;
+        top: 15px;
+        right: 20px;
+        font-size: 2rem;
         color: white;
         cursor: pointer;
         z-index: 1001;
