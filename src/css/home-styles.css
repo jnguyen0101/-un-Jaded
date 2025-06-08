@@ -293,7 +293,7 @@ body {
 /* Hero section */
 .hero-section {
     height: 100vh;
-    min-height: 100vh;
+    max-height: 100vh;
     overflow: hidden;
     padding: 0 5vw;
     position: relative;
@@ -336,7 +336,7 @@ body {
     bottom: 10%;
     right: 1vw;
     font-family: "Alegreya Sans SC", serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-decoration: none;
     color: white;
     padding: 12px 45px;
@@ -416,7 +416,7 @@ body {
 
 .footer-description {
     font-family: 'Public Sans', sans-serif;
-    font-size: 1.25rem;
+    font-size: 2vw;
     font-weight: 200;
     line-height: 1.6;
     color: white;
@@ -477,7 +477,7 @@ body {
     }
 
     .footer-description {
-        font-size: 3vw;
+        font-size: 1rem;
         padding-top: 5px;
     }
 
