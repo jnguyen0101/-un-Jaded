@@ -69,7 +69,7 @@ body {
 
     .nav-links {
         display: flex;
-        gap: 5vw;
+        gap: 2.5vw;
         list-style: none;
         padding-top: 15px;
         justify-content: center;
@@ -78,7 +78,7 @@ body {
 
     .navbar a {
         float: left;
-        font-size: 1.5vw;
+        font-size: 1.5rem;
         font-family: "Alegreya Sans SC", serif;
         color: white;
         text-align: center;
@@ -110,7 +110,7 @@ body {
     }
 
     .dropdown .dropbtn {
-        font-size: 1.5vw;
+        font-size: 1.5rem;
         font-family: "Alegreya Sans SC", serif;
         border: none;
         outline: none;
