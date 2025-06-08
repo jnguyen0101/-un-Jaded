@@ -69,7 +69,7 @@ body {
 
     .nav-links {
         display: flex;
-        gap: 6vw;
+        gap: 5vw;
         list-style: none;
         padding-top: 15px;
         justify-content: center;
@@ -78,7 +78,7 @@ body {
 
     .navbar a {
         float: left;
-        font-size: 1.5rem;
+        font-size: 1.5vw;
         font-family: "Alegreya Sans SC", serif;
         color: white;
         text-align: center;
@@ -110,7 +110,7 @@ body {
     }
 
     .dropdown .dropbtn {
-        font-size: 1.5rem;
+        font-size: 1.5vw;
         font-family: "Alegreya Sans SC", serif;
         border: none;
         outline: none;
@@ -137,7 +137,7 @@ body {
     }
 
     .dropdown-content a {
-        font-size: 1rem;
+        font-size: 1vw;
         font-family: "Public Sans", serif;
         font-weight: normal;
         float: none;
@@ -151,20 +151,12 @@ body {
 
     .dropdown-content a::before {
         content: '𖥧';
-        font-size: 1rem;
+        font-size: 1vw;
         position: absolute;
         left: 6.5px;
         opacity: 0;
         transform: translateX(-5px);
         transition: opacity 0.2s ease, transform 0.2s ease;
-    }
-}
-
-@media (hover: hover) {
-    .logo:hover {
-        box-shadow: 0 0 8px 3px rgba(255, 255, 255, 0.25);
-        transform: scale(1.02);
-        cursor: pointer;
     }
 
     .navbar .dropdown:hover .dropbtn::after,
@@ -197,6 +189,14 @@ body {
 
     .dropdown:hover .arrow {
         transform: rotate(-180deg);
+    }
+}
+
+@media (hover: hover) {
+    .logo:hover {
+        box-shadow: 0 0 8px 3px rgba(255, 255, 255, 0.25);
+        transform: scale(1.02);
+        cursor: pointer;
     }
 }
 
