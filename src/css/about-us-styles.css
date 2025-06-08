@@ -354,14 +354,12 @@ body {
     display: flex;
     height: 100vh;
     width: 100%;
-    overflow: hidden;
 }
 
 .UJ-squiggly-divider svg {
     height: 100%;
     width: 10vw;
     display: block;
-    border: black solid;
 }
 
 .UJ-content-left {
