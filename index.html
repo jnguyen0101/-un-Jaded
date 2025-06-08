@@ -64,17 +64,50 @@
       <div id="sideMenu" class="side-menu">
         <div class="menu-separator"></div>
         <ul>
-          <li><a href="src/pages/what-is-UJ.html">What is UJ?</a></li>
-          <li><a href="src/pages/founders.html">Founders</a></li>
-          <li><a href="src/pages/current-directors.html">Current Directors</a></li>
-          <li><a href="#">Join UJ</a></li>
-          <li><a href="#">Family Jewels</a></li>
-          <li><a href="#">Calendar</a></li>
-          <li><a href="#">Workshops</a></li>
-          <li><a href="#">Hotlines</a></li>
-          <li><a href="#">Mental Health First Aid</a></li>
-          <li><a href="#">Spotify Playlist</a></li>
-          <li><a href="#">Blog</a></li>
+          <li class="hamburger-dropdown">
+            <a href="#" onclick="toggleHamburgerDropdown(event)">
+              About Us
+              <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </a>
+            <ul class="hamburger-submenu">
+              <li class="ham-sub-link"><a href="src/pages/what-is-UJ.html">What is UJ?</a></li>
+              <li class="ham-sub-link"><a href="src/pages/founders.html">Founders</a></li>
+              <li class="ham-sub-link"><a href="src/pages/current-directors.html">Current Directors</a></li>
+            </ul>
+          </li>
+          <li class="hamburger-dropdown">
+            <a href="#" onclick="toggleHamburgerDropdown(event)">
+              Get Involved
+              <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </a>
+            <ul class="hamburger-submenu">
+              <li class="ham-sub-link"><a href="#">Join UJ</a></li>
+              <li class="ham-sub-link"><a href="#">Family Jewels</a></li>
+              <li class="ham-sub-link"><a href="#">Calendar</a></li>
+            </ul>
+          </li>
+          <li class="hamburger-link"><a href="#">Workshops</a></li>
+          <li class="hamburger-dropdown">
+            <a href="#" onclick="toggleHamburgerDropdown(event)">
+              Resources
+              <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </a>
+            <ul class="hamburger-submenu">
+              <li class="ham-sub-link"><a href="#">Hotlines</a></li>
+              <li class="ham-sub-link"><a href="#">Mental Health First Aid</a></li>
+              <li class="ham-sub-link"><a href="#">Spotify Playlist</a></li>
+            </ul>
+          </li>
+          <li class="hamburger-link"><a href="#">Blog</a></li>
         </ul>
       </div>
       <div id="menuOverlay" class="menu-overlay"></div>
