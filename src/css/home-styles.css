@@ -158,14 +158,6 @@ body {
         transform: translateX(-5px);
         transition: opacity 0.2s ease, transform 0.2s ease;
     }
-}
-
-@media (hover: hover) {
-    .logo:hover {
-        box-shadow: 0 0 8px 3px rgba(255, 255, 255, 0.25);
-        transform: scale(1.02);
-        cursor: pointer;
-    }
 
     .navbar .dropdown:hover .dropbtn::after,
     .navbar .no-drop:hover::after {
@@ -197,6 +189,14 @@ body {
 
     .dropdown:hover .arrow {
         transform: rotate(-180deg);
+    }
+}
+
+@media (hover: hover) {
+    .logo:hover {
+        box-shadow: 0 0 8px 3px rgba(255, 255, 255, 0.25);
+        transform: scale(1.02);
+        cursor: pointer;
     }
 }
 
