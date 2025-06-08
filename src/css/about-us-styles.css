@@ -186,6 +186,18 @@ body {
         transform: rotateX(0deg);
         pointer-events: auto;
     }
+
+    .dropdown .arrow {
+        display: inline-block;
+        margin-left: 0.25rem;
+        transition: transform 0.3s ease;
+        transform-origin: center;
+        vertical-align: middle;
+    }
+
+    .dropdown:hover .arrow {
+        transform: rotate(-180deg);
+    }
 }
 
 /* Hamburger menu for small screens */
