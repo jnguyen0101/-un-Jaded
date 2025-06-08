@@ -563,7 +563,8 @@ body {
     opacity: 1;
     transition: opacity 1s ease;
     pointer-events: none;
-    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
 }
 
 #splash-logo img {
