@@ -364,11 +364,11 @@ body {
 
 .UJ-content-left {
     display: flex;
+    padding: 2rem;
     justify-content: center;
     align-items: center;
     flex: 1;
     background-color: #e8e5dc;
-    padding: 2rem;
     height: 100vh;
 }
 
