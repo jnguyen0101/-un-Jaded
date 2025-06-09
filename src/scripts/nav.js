@@ -30,12 +30,43 @@ function toggleHamburgerDropdown(event) {
     clickedDropdown.classList.toggle('open');
 }
 
-document.getElementById("menuOverlay").addEventListener("click", () => {
-    toggleMenu();
-});
+document.addEventListener("DOMContentLoaded", () => {
+    const dropdowns = document.querySelectorAll(".dropdown");
 
-document.querySelectorAll('#sideMenu a').forEach(link => {
-    link.addEventListener('click', () => {
-        document.getElementById('sideMenu').classList.remove('active');
+    dropdowns.forEach(dropdown => {
+        const button = dropdown.querySelector(".dropbtn");
+        const menu = dropdown.querySelector(".dropdown-content");
+
+        let isTouchOpen = false;
+
+        button.addEventListener("click", (e) => {
+            if (window.matchMedia("(hover: none)").matches) {
+                e.preventDefault();
+
+                document.querySelectorAll(".dropdown-content.show-touch").forEach(el => {
+                    if (el !== menu) el.classList.remove("show-touch");
+                });
+
+                menu.classList.toggle("show-touch");
+                isTouchOpen = menu.classList.contains("show-touch");
+            }
+        });
+
+        document.addEventListener("click", (e) => {
+            if (!dropdown.contains(e.target)) {
+                menu.classList.remove("show-touch");
+                isTouchOpen = false;
+            }
+        });
+    });
+
+    document.getElementById("menuOverlay").addEventListener("click", () => {
+        toggleMenu();
+    });
+
+    document.querySelectorAll('#sideMenu a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('sideMenu').classList.remove('active');
+        });
     });
 });
