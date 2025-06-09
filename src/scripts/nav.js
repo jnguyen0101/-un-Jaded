@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 menu.classList.add("show-touch");
                 activeMenu = menu;
             } else {
+                menu.classList.remove("show-touch");
                 activeMenu = null;
             }
         });
