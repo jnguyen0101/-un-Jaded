@@ -569,7 +569,7 @@ body {
     opacity: 1;
     transition: opacity 1s ease;
     pointer-events: none;
-    height: 100dvh;
+    height: 100vh;
     overflow: hidden;
 }
 
