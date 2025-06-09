@@ -32,38 +32,50 @@ function toggleHamburgerDropdown(event) {
 
 document.addEventListener("DOMContentLoaded", () => {
     const dropdowns = document.querySelectorAll(".dropdown");
+    let activeMenu = null;
 
     dropdowns.forEach(dropdown => {
         const button = dropdown.querySelector(".dropbtn");
         const menu = dropdown.querySelector(".dropdown-content");
 
-        let isTouchOpen = false;
-
         button.addEventListener("click", (e) => {
+            // Only on touch devices
             if (window.matchMedia("(hover: none)").matches) {
                 e.preventDefault();
+                e.stopPropagation();
 
-                document.querySelectorAll(".dropdown-content.show-touch").forEach(el => {
-                    if (el !== menu) el.classList.remove("show-touch");
-                });
+                // If already open, close it
+                if (menu.classList.contains("show-touch")) {
+                    menu.classList.remove("show-touch");
+                    activeMenu = null;
+                } else {
+                    // Close others
+                    document.querySelectorAll(".dropdown-content.show-touch").forEach(openMenu => {
+                        openMenu.classList.remove("show-touch");
+                    });
 
-                menu.classList.toggle("show-touch");
-                isTouchOpen = menu.classList.contains("show-touch");
-            }
-        });
-
-        document.addEventListener("click", (e) => {
-            if (!dropdown.contains(e.target)) {
-                menu.classList.remove("show-touch");
-                isTouchOpen = false;
+                    // Open this one
+                    menu.classList.add("show-touch");
+                    activeMenu = menu;
+                }
             }
         });
     });
 
+    // Close when clicking outside any dropdown
+    document.addEventListener("click", (e) => {
+        if (activeMenu && !e.target.closest(".dropdown")) {
+            activeMenu.classList.remove("show-touch");
+            activeMenu = null;
+        }
+    });
+
+    // Close when clicking outside of hamburger side menu
     document.getElementById("menuOverlay").addEventListener("click", () => {
         toggleMenu();
     });
 
+    // Close all other dropdowns
     document.querySelectorAll('#sideMenu a').forEach(link => {
         link.addEventListener('click', () => {
             document.getElementById('sideMenu').classList.remove('active');
