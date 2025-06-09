@@ -597,6 +597,7 @@ body {
     #splash-logo img {
         width: 15rem;
         height: 15rem;
+        top: 45vh;
     }
 }
 
