@@ -195,8 +195,8 @@ body {
     /* Touchscreen-specific dropdown show behavior */
     @media (hover: none) {
         .dropdown-content {
-            display: block;
-            opacity: 0;
+            display: block !important;
+            opacity: 0 !important;
             transform: rotateX(-90deg);
             pointer-events: none;
             transition: transform 0.3s ease, opacity 0.3s ease;
