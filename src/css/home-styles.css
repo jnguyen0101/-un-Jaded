@@ -160,7 +160,7 @@ body {
         transition: opacity 0.2s ease, transform 0.2s ease;
     }
 
-    .dropdown:hover .dropdown-content:not(.show-touch) {
+    .dropdown.open-touch .dropdown-content {
         opacity: 1;
         transform: rotateX(0deg);
         pointer-events: auto;

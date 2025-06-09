@@ -31,46 +31,36 @@ function toggleHamburgerDropdown(event) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const isTouchDevice = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+    const isTouchScreen = window.matchMedia('(hover: none) and (pointer: coarse)').matches && window.innerWidth > 768;
 
-    if (!isTouchDevice) return;
+    if (isTouchScreen) {
+        const dropdowns = document.querySelectorAll('.nav-links .dropdown');
 
-    let activeMenu = null;
+        dropdowns.forEach(dropdown => {
+            const button = dropdown.querySelector('.dropbtn');
 
-    document.querySelectorAll(".dropdown").forEach(dropdown => {
-        const btn = dropdown.querySelector(".dropbtn");
-        const menu = dropdown.querySelector(".dropdown-content");
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
 
-        btn.addEventListener("click", (e) => {
-            e.preventDefault();
-            e.stopPropagation();
+                const isOpen = dropdown.classList.contains('open-touch');
 
-            const isOpen = menu.classList.contains("show-touch");
+                // Close all other open dropdowns
+                document.querySelectorAll('.dropdown.open-touch').forEach(d => {
+                    if (d !== dropdown) d.classList.remove('open-touch');
+                });
 
-            // Close all open dropdowns
-            document.querySelectorAll(".dropdown-content.show-touch").forEach(m => {
-                m.classList.remove("show-touch");
+                // Toggle this one
+                dropdown.classList.toggle('open-touch', !isOpen);
             });
 
-            // Toggle current
-            if (!isOpen) {
-                menu.classList.add("show-touch");
-                activeMenu = menu;
-            } else {
-                activeMenu = null;
-            }
+            // Close on tap outside
+            document.addEventListener('click', (e) => {
+                if (!dropdown.contains(e.target)) {
+                    dropdown.classList.remove('open-touch');
+                }
+            });
         });
-    });
-
-    // Close when clicking outside
-    document.addEventListener("click", (e) => {
-        if (!e.target.closest(".dropdown")) {
-            document.querySelectorAll(".dropdown-content.show-touch").forEach(m => {
-                m.classList.remove("show-touch");
-            });
-            activeMenu = null;
-        }
-    });
+    }
 
     // Close when clicking outside of hamburger side menu
     document.getElementById("menuOverlay").addEventListener("click", () => {
