@@ -197,6 +197,7 @@ body {
             opacity: 1 !important;
             transform: rotateX(0deg) !important;
             pointer-events: auto;
+            border: black solid 1px;
         }
     }
 }
