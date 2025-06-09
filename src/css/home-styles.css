@@ -197,8 +197,8 @@ body {
         .dropdown-content.show-touch {
             opacity: 1 !important;
             transform: rotateX(0deg) !important;
-            pointer-events: auto;
-            border: black solid 1px;
+            pointer-events: auto !important;
+            border: black !important;
         }
     }
 }

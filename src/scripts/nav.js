@@ -32,41 +32,45 @@ function toggleHamburgerDropdown(event) {
 
 document.addEventListener("DOMContentLoaded", () => {
     const dropdowns = document.querySelectorAll(".dropdown");
-    let activeMenu = null;
+    let activeDropdown = null;
 
     dropdowns.forEach(dropdown => {
         const button = dropdown.querySelector(".dropbtn");
         const menu = dropdown.querySelector(".dropdown-content");
 
         button.addEventListener("click", (e) => {
-            // Only on touch devices
+            // Only run on touch devices
             if (window.matchMedia("(hover: none)").matches) {
                 e.preventDefault();
                 e.stopPropagation();
 
-                // If already open, close it
-                if (menu.classList.contains("show-touch")) {
-                    menu.classList.remove("show-touch");
-                    activeMenu = null;
-                } else {
-                    // Close others
-                    document.querySelectorAll(".dropdown-content.show-touch").forEach(openMenu => {
-                        openMenu.classList.remove("show-touch");
-                    });
+                const isAlreadyOpen = menu.classList.contains("show-touch");
 
-                    // Open this one
+                // Close all dropdowns
+                document.querySelectorAll(".dropdown-content.show-touch").forEach(openMenu => {
+                    openMenu.classList.remove("show-touch");
+                });
+
+                // Toggle current only if it was not already open
+                if (!isAlreadyOpen) {
                     menu.classList.add("show-touch");
-                    activeMenu = menu;
+                    activeDropdown = menu;
+                } else {
+                    activeDropdown = null;
                 }
             }
         });
     });
 
-    // Close when clicking outside any dropdown
+    // Close on outside click
     document.addEventListener("click", (e) => {
-        if (activeMenu && !e.target.closest(".dropdown")) {
-            activeMenu.classList.remove("show-touch");
-            activeMenu = null;
+        if (
+            window.matchMedia("(hover: none)").matches &&
+            activeDropdown &&
+            !e.target.closest(".dropdown")
+        ) {
+            activeDropdown.classList.remove("show-touch");
+            activeDropdown = null;
         }
     });
 
