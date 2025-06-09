@@ -160,6 +160,12 @@ body {
         transition: opacity 0.2s ease, transform 0.2s ease;
     }
 
+    .dropdown:hover .dropdown-content:not(.show-touch) {
+        opacity: 1;
+        transform: rotateX(0deg);
+        pointer-events: auto;
+    }
+
     .navbar .dropdown:hover .dropbtn::after,
     .navbar .no-drop:hover::after {
         width: 100%;
@@ -190,23 +196,6 @@ body {
 
     .dropdown:hover .arrow {
         transform: rotate(-180deg);
-    }
-
-    /* Touchscreen-specific dropdown show behavior */
-    @media (hover: none) {
-        .dropdown-content {
-            display: block !important;
-            opacity: 0 !important;
-            transform: rotateX(-90deg);
-            pointer-events: none;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-        }
-
-        .dropdown-content.show-touch {
-            opacity: 1 !important;
-            transform: rotateX(0deg) !important;
-            pointer-events: auto !important;
-        }
     }
 }
 

@@ -31,46 +31,44 @@ function toggleHamburgerDropdown(event) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const dropdowns = document.querySelectorAll(".dropdown");
-    let activeDropdown = null;
+    const isTouchDevice = "ontouchstart" in window || navigator.maxTouchPoints > 0;
 
-    dropdowns.forEach(dropdown => {
-        const button = dropdown.querySelector(".dropbtn");
+    if (!isTouchDevice) return;
+
+    let activeMenu = null;
+
+    document.querySelectorAll(".dropdown").forEach(dropdown => {
+        const btn = dropdown.querySelector(".dropbtn");
         const menu = dropdown.querySelector(".dropdown-content");
 
-        button.addEventListener("click", (e) => {
-            // Only run on touch devices
-            if (window.matchMedia("(hover: none)").matches) {
-                e.preventDefault();
-                e.stopPropagation();
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
 
-                const isAlreadyOpen = menu.classList.contains("show-touch");
+            const isOpen = menu.classList.contains("show-touch");
 
-                // Close all dropdowns
-                document.querySelectorAll(".dropdown-content.show-touch").forEach(openMenu => {
-                    openMenu.classList.remove("show-touch");
-                });
+            // Close all open dropdowns
+            document.querySelectorAll(".dropdown-content.show-touch").forEach(m => {
+                m.classList.remove("show-touch");
+            });
 
-                // Toggle current only if it was not already open
-                if (!isAlreadyOpen) {
-                    menu.classList.add("show-touch");
-                    activeDropdown = menu;
-                } else {
-                    activeDropdown = null;
-                }
+            // Toggle current
+            if (!isOpen) {
+                menu.classList.add("show-touch");
+                activeMenu = menu;
+            } else {
+                activeMenu = null;
             }
         });
     });
 
-    // Close on outside click
+    // Close when clicking outside
     document.addEventListener("click", (e) => {
-        if (
-            window.matchMedia("(hover: none)").matches &&
-            activeDropdown &&
-            !e.target.closest(".dropdown")
-        ) {
-            activeDropdown.classList.remove("show-touch");
-            activeDropdown = null;
+        if (!e.target.closest(".dropdown")) {
+            document.querySelectorAll(".dropdown-content.show-touch").forEach(m => {
+                m.classList.remove("show-touch");
+            });
+            activeMenu = null;
         }
     });
 
