@@ -2,6 +2,16 @@ html {
     font-size: 16px;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1F7D53;
+    height: 100dvh;
+    min-height: 100%;
+    overflow: hidden;
+    user-select: none;
+}
+
 @media (max-width: 768px) {
     html {
         font-size: 14px;
@@ -19,16 +29,6 @@ html {
     *, *::before, *::after {
         box-sizing: inherit;
     }
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #1F7D53;
-    height: 100dvh;
-    min-height: 100%;
-    overflow: hidden;
-    user-select: none;
 }
 
 .navbar {
