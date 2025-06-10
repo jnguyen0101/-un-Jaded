@@ -376,7 +376,7 @@ body {
 
 .UJ-info {
     text-align: center;
-    margin: 0 auto 25vh;
+    margin: 0 auto 20vh;
     width: 90%;
 
     h1 {
@@ -387,6 +387,7 @@ body {
     p {
         font-family: "Rubik", serif;
         font-size: 1.25rem;
+        line-height: 2rem;
     }
 }
 
