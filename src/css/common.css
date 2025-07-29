@@ -196,18 +196,18 @@ body {
     /* Large touchscreen devices*/
     @media (hover: none) and (pointer: coarse) {
         .dropdown:hover .dropdown-content {
-            opacity: 0;
-            transform: rotateX(-90deg);
-            pointer-events: none;
+            opacity: 0 !important;
+            transform: rotateX(-90deg) !important;
+            pointer-events: none !important;
         }
 
         .dropdown:hover .arrow {
-            transform: rotate(0deg)
+            transform: rotate(0deg) !important;
         }
 
         .navbar .dropdown:hover .dropbtn::after,
         .navbar .no-drop:hover::after {
-            width: 0;
+            width: 0 !important;
         }
 
         .dropdown.open-touch .dropdown-content {
@@ -218,7 +218,6 @@ body {
 
         .dropdown .arrow {
             transform: rotate(0deg);
-            transition: transform 0.3s ease;
         }
 
         .dropdown.open-touch .arrow {
@@ -229,7 +228,6 @@ body {
         .navbar .no-drop::after {
             content: '';
             width: 0;
-            transition: width 0.3s ease;
         }
 
         .dropdown.open-touch .dropbtn::after {
