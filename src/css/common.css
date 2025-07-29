@@ -207,6 +207,11 @@ body {
             pointer-events: auto;
         }
 
+        .dropdown .arrow {
+            transform: rotate(0deg);
+            transition: transform 0.3s ease;
+        }
+
         .dropdown.open-touch .arrow {
             transform: rotate(-180deg);
         }
@@ -215,6 +220,7 @@ body {
         .navbar .no-drop::after {
             content: '';
             width: 0;
+            transition: width 0.3s ease;
         }
 
         .dropdown.open-touch .dropbtn::after {
