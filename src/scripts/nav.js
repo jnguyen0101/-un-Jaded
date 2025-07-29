@@ -42,15 +42,13 @@ document.addEventListener("DOMContentLoaded", () => {
             button.addEventListener('click', (e) => {
                 e.preventDefault();
 
-                const isOpen = dropdown.classList.contains('open-touch');
-
                 // Close all other open dropdowns
                 document.querySelectorAll('.dropdown.open-touch').forEach(d => {
                     if (d !== dropdown) d.classList.remove('open-touch');
                 });
 
                 // Toggle this one
-                dropdown.classList.toggle('open-touch', !isOpen);
+                dropdown.classList.toggle('open-touch');
             });
 
             // Close on tap outside

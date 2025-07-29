@@ -192,6 +192,35 @@ body {
     .dropdown:hover .arrow {
         transform: rotate(-180deg);
     }
+
+    /* Large touchscreen devices*/
+    @media (hover: none) and (pointer: coarse) {
+        .dropdown:hover .dropdown-content {
+            opacity: 0;
+            transform: rotateX(-90deg);
+            pointer-events: none;
+        }
+
+        .dropdown.open-touch .dropdown-content {
+            opacity: 1;
+            transform: rotateX(0deg);
+            pointer-events: auto;
+        }
+
+        .dropdown.open-touch .arrow {
+            transform: rotate(-180deg);
+        }
+
+        .navbar .dropbtn::after,
+        .navbar .no-drop::after {
+            content: '';
+            width: 0;
+        }
+
+        .dropdown.open-touch .dropbtn::after {
+            width: 100%;
+        }
+    }
 }
 
 @media (hover: hover) {
