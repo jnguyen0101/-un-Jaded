@@ -34,7 +34,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
     background-color: #1F7D53;
     height: 60px;
     padding: 10px;
