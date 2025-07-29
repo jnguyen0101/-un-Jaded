@@ -31,35 +31,6 @@ function toggleHamburgerDropdown(event) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const isTouchScreen = window.matchMedia('(hover: none) and (pointer: coarse)').matches && window.innerWidth > 768;
-
-    if (isTouchScreen) {
-        const dropdowns = document.querySelectorAll('.nav-links .dropdown');
-
-        dropdowns.forEach(dropdown => {
-            const button = dropdown.querySelector('.dropbtn');
-
-            button.addEventListener('click', (e) => {
-                e.preventDefault();
-
-                // Close all other open dropdowns
-                document.querySelectorAll('.dropdown.open-touch').forEach(d => {
-                    if (d !== dropdown) d.classList.remove('open-touch');
-                });
-
-                // Toggle this one
-                dropdown.classList.toggle('open-touch');
-            });
-
-            // Close on tap outside
-            document.addEventListener('click', (e) => {
-                if (!dropdown.contains(e.target)) {
-                    dropdown.classList.remove('open-touch');
-                }
-            });
-        });
-    }
-
     // Close when clicking outside of hamburger side menu
     document.getElementById("menuOverlay").addEventListener("click", () => {
         toggleMenu();
