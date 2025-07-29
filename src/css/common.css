@@ -70,7 +70,7 @@ body {
 
     .nav-links {
         display: flex;
-        gap: 2.5vw;
+        gap: 2vw;
         list-style: none;
         padding-top: 15px;
         justify-content: center;
