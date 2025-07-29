@@ -42,8 +42,59 @@
 
 .UJ-content-right {
     width: 50%;
-    background: #255F38 url("https://placecats.com/300/200") no-repeat center center;
+    background: #255F38 url("../../assets/jade-green.jpg") no-repeat center center;
     padding: 2rem;
     height: 100vh;
     background-size: cover;
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+    .what-is-UJ-section {
+        flex-direction: column;
+        height: auto;
+        padding-top: 0;
+        padding-bottom: 0;
+        box-sizing: border-box;
+    }
+
+    .UJ-content-left {
+        width: 100%;
+        height: calc(55dvh - 30px);
+        padding: 1.5rem;
+        margin-top: 0;
+        order: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: auto;
+        box-sizing: border-box;
+    }
+
+    .UJ-info {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        max-width: none;
+        padding: 0 5px;
+    }
+
+    .UJ-info h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .UJ-content-right {
+        width: 100%;
+        height: calc(45dvh - 30px);
+        padding: 0;
+        background-size: cover;
+        background-position: center center;
+        margin-top: 0;
+        order: 1;
+    }
+
+    .UJ-squiggly-divider {
+        display: none;
+    }
 }
