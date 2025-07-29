@@ -57,7 +57,7 @@ body {
     .logo {
         position: absolute;
         top: 125%;
-        left: 65px;
+        left: 75px;
         transform: translateY(-50%);
         width: 150px;
         height: 150px;
@@ -76,6 +76,7 @@ body {
         padding-top: 15px;
         justify-content: center;
         flex: 1;
+        margin-left: 25vw;
     }
 
     .navbar a {
@@ -209,8 +210,8 @@ body {
     }
 
     .logo {
-        position: fixed;
-        top: 20px;
+        position: absolute;
+        top: 50%;
         left: 35px;
         width: 80px;
         height: 80px;
