@@ -37,7 +37,7 @@ body {
     gap: 3rem;
     background-color: #1F7D53;
     height: 60px;
-    padding: 10px 40px;
+    padding: 10px;
     position: relative;
     z-index: 100;
     backdrop-filter: blur(12px);
@@ -76,12 +76,12 @@ body {
         padding-top: 15px;
         justify-content: center;
         flex: 1;
-        margin-left: 25vw;
+        margin-left: 20vw;
     }
 
     .navbar a {
         float: left;
-        font-size: 1.5rem;
+        font-size: 1.5vw;
         font-family: "Alegreya Sans SC", serif;
         color: white;
         text-align: center;
@@ -113,7 +113,7 @@ body {
     }
 
     .dropdown .dropbtn {
-        font-size: 1.5rem;
+        font-size: 1.5vw;
         font-family: "Alegreya Sans SC", serif;
         border: none;
         outline: none;
