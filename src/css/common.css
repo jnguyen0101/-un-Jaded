@@ -76,6 +76,11 @@ body {
         object-fit: cover;
         z-index: 101;
         transition: box-shadow 0.6s ease-in-out, transform 0.4s ease-in-out;
+
+        @media (orientation: portrait) {
+            width: 125px;
+            height: 125px;
+        }
     }
 
     .nav-links {

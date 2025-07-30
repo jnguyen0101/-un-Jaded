@@ -48,6 +48,12 @@ body {
     bottom: -25%;
     right: 1vw;
     border-width: 0;
+
+    @media (orientation: portrait) {
+        bottom: -125%;
+        width: 80vw;
+        left: -10px;
+    }
 }
 
 @media (max-width: 768px) {
