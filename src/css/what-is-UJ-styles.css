@@ -1,12 +1,15 @@
 /* What is UJ? */
-body {
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     overflow: hidden;
 }
 
 .what-is-UJ-section {
     background-color: #255F38;
     display: flex;
-    height: 100vh;
+    height: calc(100vh - 81px);
     width: 100%;
 }
 
@@ -24,12 +27,12 @@ body {
     align-items: center;
     width: 50%;
     background-color: #e8e5dc;
-    height: 100vh;
+    max-height: calc(100vh - 81px);
 }
 
 .UJ-info {
     text-align: center;
-    margin: 0 auto 20vh;
+    margin: 0 auto -5vh;
     width: 90%;
 
     h1 {
@@ -48,7 +51,7 @@ body {
     width: 50%;
     background: #255F38 url("../../assets/jade-green.jpg") no-repeat center center;
     padding: 2rem;
-    height: 100vh;
+    max-height: calc(100vh - 81px);
     background-size: cover;
 
     h1 {
