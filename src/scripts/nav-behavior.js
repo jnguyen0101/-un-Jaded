@@ -1,6 +1,7 @@
 function toggleMenu() {
     const menu = document.getElementById("sideMenu");
     const overlay = document.getElementById("menuOverlay");
+    const hamburger = document.querySelector(".hamburger");
 
     const isOpen = menu.classList.contains("show");
 
@@ -10,9 +11,13 @@ function toggleMenu() {
 
         const openDropdowns = menu.querySelectorAll(".hamburger-dropdown.open");
         openDropdowns.forEach(drop => drop.classList.remove("open"));
+
+        hamburger.classList.remove("open");
     } else {
         menu.classList.add("show");
         overlay.classList.add("show");
+
+        hamburger.classList.add("open");
     }
 }
 

@@ -232,14 +232,36 @@ body {
     }
 
     .hamburger {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 24px;
+        height: 18px;
         position: fixed;
-        top: 20px;
+        top: 24px;
         right: 30px;
-        font-size: 1.75rem;
-        color: white;
         cursor: pointer;
         z-index: 1001;
+    }
+
+    .hamburger div {
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger.open div:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.open div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.open div:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 
     .menu-separator {
