@@ -50,6 +50,10 @@ body {
     padding: 2rem;
     height: 100vh;
     background-size: cover;
+
+    h1 {
+        display: none;
+    }
 }
 
 /* Small screens */
@@ -64,15 +68,17 @@ body {
 
     .UJ-content-left {
         width: 100%;
-        height: calc(55dvh - 30px);
+        height: calc(60dvh - 30px);
         padding: 1.5rem;
         margin-top: 0;
         order: 2;
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow-y: auto;
-        box-sizing: border-box;
+
+        p {
+            font-size: 1rem;
+        }
     }
 
     .UJ-info {
@@ -84,18 +90,28 @@ body {
     }
 
     .UJ-info h1 {
-        font-size: 1.8rem;
-        margin-bottom: 0.75rem;
+        display: none;
     }
 
     .UJ-content-right {
         width: 100%;
-        height: calc(45dvh - 30px);
+        height: calc(40dvh - 30px);
         padding: 0;
         background-size: cover;
         background-position: center center;
         margin-top: 0;
         order: 1;
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 25%;
+            color: white;
+            font-family: "TS Block Bold", serif;
+            font-size: 2.5rem;
+        }
     }
 
     .UJ-squiggly-divider {
