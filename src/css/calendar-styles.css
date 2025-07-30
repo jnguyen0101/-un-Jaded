@@ -1,0 +1,39 @@
+body {
+    background: #e8e5dc;
+    overflow: visible;
+}
+
+.calendar-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+    ),
+    url(../../assets/jade-green-cal.jpg) no-repeat center center fixed;
+    height: 40dvh;
+    margin-top: -60px;
+}
+
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar {
+    width: 70vw;
+    height: 65vh;
+    margin-top: -13dvh;
+    border-radius: 20px;
+    border: solid 10px #2F5249;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: "TS Block Bold", serif;
+    color: white;
+}
