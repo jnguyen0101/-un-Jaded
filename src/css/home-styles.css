@@ -43,19 +43,11 @@ body {
     margin-bottom: 1rem;
 }
 
-.get-involved-btn {
+.spotify {
     position: absolute;
-    bottom: 10%;
+    bottom: -25%;
     right: 1vw;
-    font-family: "Alegreya Sans SC", serif;
-    font-size: 1.25rem;
-    text-decoration: none;
-    color: white;
-    padding: 12px 45px;
-    border: 1px solid white;
-    border-radius: 25px;
-    z-index: 2;
-    transition: all 0.2s ease;
+    border-width: 0;
 }
 
 @media (max-width: 768px) {
@@ -89,22 +81,6 @@ body {
         h3 {
             font-size: 3vw;
         }
-    }
-
-    .get-involved-btn {
-        position: static;
-        margin-top: 1rem;
-        padding: 12px 32px;
-        font-size: 3vw;
-        align-self: center;
-    }
-}
-
-@media (hover: hover) {
-    .get-involved-btn:hover {
-        background-color: white;
-        color: #1F7D53;
-        transition: all 0.2s ease;
     }
 }
 
