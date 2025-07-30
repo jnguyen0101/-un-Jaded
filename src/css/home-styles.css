@@ -84,10 +84,9 @@ body {
     }
 
     .spotify {
-        height: 150px;
-        width: 400px;
+        height: 15dvh;
+        width: 90vw;
         position: static;
-        padding: 12px 32px;
         font-size: 3vw;
         align-self: center;
     }
