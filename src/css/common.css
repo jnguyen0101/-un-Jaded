@@ -1,3 +1,13 @@
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #16423C;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #6A9C89;
+    border-radius: 6px;
+}
+
 html {
     font-size: 16px;
 }
