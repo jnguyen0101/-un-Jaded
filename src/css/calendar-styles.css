@@ -1,6 +1,5 @@
 body {
-    background: #e8e5dc;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .calendar-title {
@@ -17,6 +16,7 @@ body {
 }
 
 .calendar-container {
+    background-color: #e8e5dc;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,6 +28,7 @@ body {
     margin-top: -13dvh;
     border-radius: 20px;
     border: solid 10px #2F5249;
+    margin-bottom: 50px;
 }
 
 h1 {

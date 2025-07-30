@@ -1,4 +1,8 @@
 /* What is UJ? */
+body {
+    overflow: hidden;
+}
+
 .what-is-UJ-section {
     background-color: #255F38;
     display: flex;
