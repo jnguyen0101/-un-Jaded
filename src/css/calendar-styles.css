@@ -51,6 +51,7 @@ h1 {
 
     .calendar {
         width: 90vw;
+        height: 55vh;
         margin-top: -10dvh;
     }
 }
