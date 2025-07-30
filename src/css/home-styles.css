@@ -9,7 +9,7 @@ body {
     overflow: hidden;
     padding: 0 5vw;
     position: relative;
-    background-image: url(/assets/leaf-hero.png);
+    background-image: url(../../assets/leaf-hero.png);
     background-size: cover;
     background-position: center;
     display: flex;
