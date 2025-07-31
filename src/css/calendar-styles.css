@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .calendar-title {
@@ -22,7 +22,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: calc(100vh - 32dvh - 81px);
+    max-height: calc(100dvh - 32dvh - 81px);
 }
 
 .calendar {
@@ -31,7 +31,7 @@ html, body {
     height: 60vh;
     border-radius: 20px;
     border: solid 10px #2F5249;
-    margin: 10vh 0 200px;
+    margin: 12vh 0 200px;
 }
 
 h1 {
@@ -49,14 +49,17 @@ h1 {
 /* Small screens */
 @media (max-width: 768px) {
     h1 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         padding: 0 10px;
-        margin: 60px 0 0;
+        margin: 0 40px;
     }
 
     .calendar {
-        width: 90vw;
-        height: 55vh;
-        margin-top: -10dvh;
+        width: 84vw;
+        height: 64vh;
+        margin: 64px auto 200px;
+    }
+    .calendar-container {
+        max-height: calc(100dvh - 32dvh - 60px);
     }
 }
