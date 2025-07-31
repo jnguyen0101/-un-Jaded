@@ -1,6 +1,9 @@
 body {
     height: 100dvh;
     min-height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Hero section */
@@ -207,7 +210,7 @@ body {
     opacity: 1;
     transition: opacity 1s ease;
     pointer-events: none;
-    height: 100svh;
+    height: 100dvh;
     overflow: hidden;
 }
 
