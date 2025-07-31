@@ -1,3 +1,4 @@
+// Toggle for hamburger menu on small screens
 function toggleMenu() {
     const menu = document.getElementById("sideMenu");
     const overlay = document.getElementById("menuOverlay");
@@ -21,11 +22,13 @@ function toggleMenu() {
     }
 }
 
+// Toggle for dropdowns in hamburger menu
 function toggleHamburgerDropdown(event) {
     event.preventDefault();
     const allDropdowns = document.querySelectorAll('.hamburger-dropdown');
     const clickedDropdown = event.target.closest('.hamburger-dropdown');
 
+    // Close all dropdowns except for the one that is open
     allDropdowns.forEach(dropdown => {
         if (dropdown !== clickedDropdown) {
             dropdown.classList.remove('open');
@@ -36,16 +39,9 @@ function toggleHamburgerDropdown(event) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Close when clicking outside of hamburger side menu
+    // Close when clicking outside of hamburger menu
     document.getElementById("menuOverlay").addEventListener("click", () => {
         toggleMenu();
-    });
-
-    // Close all other dropdowns
-    document.querySelectorAll('#sideMenu a').forEach(link => {
-        link.addEventListener('click', () => {
-            document.getElementById('sideMenu').classList.remove('active');
-        });
     });
 
     // Check if the device is a large touch screen
