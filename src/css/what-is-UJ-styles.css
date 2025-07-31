@@ -18,6 +18,7 @@ html, body {
     width: 10vw;
     display: block;
     position: absolute;
+    right: calc(40% + 1px);
 }
 
 .UJ-content-left {
