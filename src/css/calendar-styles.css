@@ -32,6 +32,10 @@ html, body {
     border-radius: 20px;
     border: solid 10px #2F5249;
     margin: 12vh 0 200px;
+
+    @media (orientation: portrait) {
+        margin-top: 6vh;
+    }
 }
 
 h1 {
