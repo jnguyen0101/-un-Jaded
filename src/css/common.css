@@ -232,7 +232,8 @@ body {
             transform: rotate(0deg);
         }
 
-        .navbar .dropdown:hover .dropbtn::after {
+        .navbar .dropdown:hover .dropbtn::after,
+        .navbar .no-drop:hover::after {
             width: 0;
         }
     }
