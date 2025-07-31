@@ -219,6 +219,33 @@ body {
     .dropdown:hover .arrow {
         transform: rotate(-180deg);
     }
+
+    /* Large touchscreens */
+    @media (hover: none) and (min-width: 769px) {
+        .dropdown:hover .dropdown-content {
+            opacity: 0;
+            transform: rotateX(-90deg);
+            pointer-events: none;
+        }
+
+        .dropdown:hover .arrow {
+            transform: rotate(0deg);
+        }
+
+        .navbar .dropdown:hover .dropbtn::after {
+            width: 0;
+        }
+    }
+
+    .dropdown.open .dropdown-content {
+        opacity: 1;
+        transform: rotateX(0deg);
+        pointer-events: auto;
+    }
+
+    .dropdown.open .arrow {
+        transform: rotate(-180deg);
+    }
 }
 
 @media (hover: hover) {

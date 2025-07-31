@@ -47,4 +47,48 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById('sideMenu').classList.remove('active');
         });
     });
+
+    // Check if the device is a large touch screen
+    const isLargeTouchScreen = () => {
+        return window.matchMedia("(min-width: 769px) and (hover: none)").matches;
+    }
+
+    if (isLargeTouchScreen()) {
+        const dropdowns = document.querySelectorAll('.navbar .dropdown');
+
+        dropdowns.forEach(dropdown => {
+            const dropbtn = dropdown.querySelector('.dropbtn');
+
+            dropbtn.addEventListener('click', (event) => {
+                event.preventDefault();
+                event.stopPropagation();
+
+                // Close any currently open dropdowns first, unless it's the current one
+                dropdowns.forEach(otherDropdown => {
+                    if (otherDropdown !== dropdown && otherDropdown.classList.contains('open')) {
+                        otherDropdown.classList.remove('open');
+                    }
+                });
+
+                // Toggle the 'open' class on the clicked dropdown
+                dropdown.classList.toggle('open');
+            });
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (event) => {
+            dropdowns.forEach(dropdown => {
+                if (dropdown.classList.contains('open') && !dropdown.contains(event.target)) {
+                    dropdown.classList.remove('open');
+                }
+            });
+        });
+
+        // Ensure dropdowns don't close when clicking inside the dropdown content
+        document.querySelectorAll('.dropdown-content').forEach(content => {
+            content.addEventListener('click', (event) => {
+                event.stopPropagation();
+            });
+        });
+    }
 });
