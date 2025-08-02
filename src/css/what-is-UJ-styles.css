@@ -63,19 +63,30 @@ html, body {
         display: none;
     }
 
-    img {
-        position: absolute;
-        height: 225px;
-        width: 225px;
-        object-fit: cover;
-        border-radius: 50%;
-        box-shadow: 0 0 8px 3px rgba(37, 75, 50, 0.5);
-    }
-
     .founders :nth-child(2) img {
         bottom: 5%;
         right: 5%;
     }
+
+    .founder {
+        display: inline-block;
+        padding: 10px;
+        text-align: center;
+        font-family: sans-serif;
+
+        img {
+            display: block;
+            width: 250px;
+            height: auto;
+            margin-bottom: 8px;
+            position: absolute;
+            object-fit: cover;
+        }
+    }
+}
+
+hr {
+    opacity: 0;
 }
 
 /* Small screens */
@@ -117,11 +128,10 @@ html, body {
         height: 100dvh;
         margin-top: 0;
 
-        img {
+        .founder img {
             position: static;
-            height: 150px;
-            width: 150px;
             left: 0;
+            width: 150px;
         }
 
         h1 {
@@ -135,7 +145,6 @@ html, body {
     .founders {
         display: flex;
         flex-direction: column;
-        gap: 100px;
     }
 
     .UJ-squiggly-divider {
@@ -143,8 +152,9 @@ html, body {
     }
 
     hr {
+        opacity: 1;
         overflow: visible;
-        padding: 0 0 16px;
+        padding: 0;
         border: none;
         border-top: medium double #333;
         color: #333;
