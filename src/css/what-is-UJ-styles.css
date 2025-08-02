@@ -68,11 +68,10 @@ html, body {
         right: 5%;
     }
 
-    .founder {
+    .founder-card {
         display: inline-block;
         padding: 10px;
         text-align: center;
-        font-family: sans-serif;
 
         img {
             display: block;
@@ -81,6 +80,7 @@ html, body {
             margin-bottom: 8px;
             position: absolute;
             object-fit: cover;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
         }
 
         .founder-a {
@@ -90,6 +90,24 @@ html, body {
         .founder-b {
             rotate: 7deg;
         }
+    }
+
+    .founder-a {
+        transition: all 0.5s ease;
+    }
+
+    .founder-b {
+        transition: all 0.5s ease;
+    }
+
+    .founder-a:hover {
+        rotate: 0deg;
+        transition: all 0.5s ease;
+    }
+
+    .founder-b:hover {
+        rotate: 0deg;
+        transition: all 0.5s ease;
     }
 }
 
@@ -141,7 +159,7 @@ hr {
         height: 100dvh;
         margin-top: 0;
 
-        .founder {
+        .founder-card {
             img {
                 position: static;
                 left: 0;
