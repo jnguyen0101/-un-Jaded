@@ -49,7 +49,6 @@ body {
     padding: 10px;
     position: relative;
     z-index: 100;
-    backdrop-filter: blur(12px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     overflow: visible;
@@ -282,9 +281,9 @@ body {
         justify-content: space-between;
         width: 24px;
         height: 18px;
-        position: fixed;
-        top: 24px;
-        right: 30px;
+        position: relative;
+        top: 3px;
+        left: 150px;
         cursor: pointer;
         z-index: 1001;
     }

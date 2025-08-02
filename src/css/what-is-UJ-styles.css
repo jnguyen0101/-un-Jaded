@@ -18,64 +18,83 @@ html, body {
     width: 10vw;
     display: block;
     position: absolute;
-    right: calc(40% + 1px);
+    left: calc(45% - 5px);
+    transform: rotateY(180deg);
 }
 
 .UJ-content-left {
+    color: white;
     display: flex;
     padding: 2rem;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    background-color: #e8e5dc;
+    width: 55%;
+    background: url("../../assets/jade-green-watercolor.jpg") no-repeat center center;
+    background-size: cover;
     max-height: calc(100vh - 81px);
 }
 
 .UJ-info {
     text-align: center;
-    margin: 0 auto -5vh;
-    width: 90%;
+    margin: 0 10% -5vh 0;
+    width: 75%;
 
     h1 {
         font-family: "TS Block Bold", serif;
         font-size: 2.5rem;
+        text-shadow: 0 0 3px white;
     }
 
     p {
         font-family: "Rubik", serif;
         font-size: 1.25rem;
         line-height: 2rem;
+        text-shadow: 0 0 2px white;
     }
 }
 
 .UJ-content-right {
-    width: 50%;
-    background: #255F38 url("../../assets/jade-green.jpg") no-repeat center center;
+    width: 45%;
     padding: 2rem;
     max-height: calc(100vh - 81px);
-    background-size: cover;
+    background-color: #e8e5dc;
 
     h1 {
         display: none;
+    }
+
+    img {
+        position: absolute;
+        height: 225px;
+        width: 225px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 0 8px 3px rgba(37, 75, 50, 0.5);
+    }
+
+    .founders :nth-child(2) img {
+        bottom: 5%;
+        right: 5%;
     }
 }
 
 /* Small screens */
 @media (max-width: 768px) {
+    html, body {
+        overflow-y: visible;
+    }
+
     .what-is-UJ-section {
         flex-direction: column;
         height: auto;
-        padding-top: 0;
-        padding-bottom: 0;
         box-sizing: border-box;
     }
 
     .UJ-content-left {
         width: 100%;
-        height: calc(60dvh - 30px);
+        height: 80dvh;
         padding: 1.5rem;
         margin-top: 0;
-        order: 2;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -93,32 +112,51 @@ html, body {
         padding: 0 5px;
     }
 
-    .UJ-info h1 {
-        display: none;
-    }
-
     .UJ-content-right {
         width: 100%;
-        height: calc(40dvh - 30px);
-        padding: 0;
-        background-size: cover;
-        background-position: center center;
+        height: 100dvh;
         margin-top: 0;
-        order: 1;
+
+        img {
+            position: static;
+            height: 150px;
+            width: 150px;
+            left: 0;
+        }
 
         h1 {
+            font-family: "Alegreya Sans SC", serif;
+            font-size: 32px;
             display: flex;
             justify-content: center;
-            align-items: center;
-            text-align: center;
-            margin-top: 25%;
-            color: white;
-            font-family: "TS Block Bold", serif;
-            font-size: 2.5rem;
         }
+    }
+
+    .founders {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
     }
 
     .UJ-squiggly-divider {
         display: none;
+    }
+
+    hr {
+        overflow: visible;
+        padding: 0 0 16px;
+        border: none;
+        border-top: medium double #333;
+        color: #333;
+        text-align: center;
+    }
+    hr:after {
+        content: "𖡼";
+        display: inline-block;
+        position: relative;
+        top: -0.7em;
+        font-size: 1.5em;
+        padding: 0 0.25em;
+        background: #e8e5dc;
     }
 }
