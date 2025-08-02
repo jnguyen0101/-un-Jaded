@@ -82,6 +82,14 @@ html, body {
             position: absolute;
             object-fit: cover;
         }
+
+        .founder-a {
+            rotate: -5deg;
+        }
+
+        .founder-b {
+            rotate: 7deg;
+        }
     }
 }
 
@@ -133,10 +141,17 @@ hr {
         height: 100dvh;
         margin-top: 0;
 
-        .founder img {
-            position: static;
-            left: 0;
-            width: 150px;
+        .founder {
+            img {
+                position: static;
+                left: 0;
+                width: 150px;
+            }
+        }
+
+        .founders {
+            display: flex;
+            flex-direction: column;
         }
 
         h1 {
@@ -145,11 +160,6 @@ hr {
             display: flex;
             justify-content: center;
         }
-    }
-
-    .founders {
-        display: flex;
-        flex-direction: column;
     }
 
     .UJ-squiggly-divider {
