@@ -286,10 +286,6 @@ body {
         z-index: 101;
     }
 
-    .hamburger-wrapper {
-        width: 100vw;
-    }
-
     .hamburger {
         display: flex;
         flex-direction: column;
