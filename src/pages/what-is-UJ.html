@@ -128,25 +128,65 @@
     </svg>
   </div>
   <div class="UJ-content-right">
-    <h1>Founders</h1>
+    <h1>Meet the Founders</h1>
     <hr>
     <div class="founders">
-      <div class="founder-card">
-        <div class="card-front">
-          <img class="founder-a" src="../../assets/founder-a.png" alt="">
-          <div class="card-info-a">
-            <p>
 
-            </p>
+      <!-- Founder: Abby Ong -->
+      <div class="founder-card">
+        <img class="founder-a" src="../../assets/founder-a.png" alt="" onclick="openModal('abbyModal')">
+        <div id="abbyModal" class="modal">
+          <div class="modal-a">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('abbyModal')">&times;</span>
+              <h3>Abby Ong</h3>
+              <p>
+                (un)Jaded will forever occupy a soft spot in my heart — Kai-Lin, J, and I started it as a simple desire
+                for community, but it grew rapidly far beyond us. I think its success is a testament to the need for
+                open conversation and community building among AAPI, particularly to advance mental health and social
+                justice. My favorite part of the organization was always just talking in circles after one of the
+                workshops, getting to know people in a way that required some vulnerability.
+              </p>
+              <p>
+                (un)Jaded always attracted the best people, and in it, I found some lifelong friends. People have told
+                me that finding (un)Jaded was what helped get them through the social isolation of COVID and college. As
+                the organization continues to grow and change, I hope it always occupies a space at UT driven to provide
+                such a community.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="founder-card">
-        <div class="card-front">
-          <img class="founder-b" src="../../assets/founder-b.png" alt="">
-        </div>
-        <div class="card-info-b">
 
+      <!-- Founder: Kai-Lin Wei -->
+      <div class="founder-card">
+        <img class="founder-b" src="../../assets/founder-b.png" alt="" onclick="openModal('kai-linModal')">
+      </div>
+      <div id="kai-linModal" class="modal">
+        <div class="modal-b">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('kai-linModal')">&times;</span>
+            <h3>Kai-Lin Wei</h3>
+            <p>
+              (un)Jaded was inspired by the countless conversations between Abby, J, and myself surrounding belonging,
+              wellness, and connection among AAPI students at UT. We were proud of our heritages but bonded over the
+              way certain traditional values or generational gaps in cultural understanding could chafe up against our
+              American upbringing. As freshmen in 2019, we were all actively searching for AAPI communities on campus
+              but couldn't find one that specifically focused on building the skills to navigate these tensions. The
+              vision was to not only bring AAPI students together, but create a highly intentional space where
+              vulnerabilities could be shared and true community built.
+            </p>
+            <p>
+              A beautiful community, incredible learning experiences, and lifelong relationships have come out of this
+              project. Abby and J are, to this day, the best friends I continuously look to for advice and
+              inspiration. We're pursuing different careers, living in different cities, and chasing different dreams
+              — on my end, I'm wrapping up a cross-country move from San Francisco to start a new role at Google New
+              York this summer — but I think we still all fundamentally care about the same things. We're inspired by our
+              people. We're committed to carrying our histories with pride while still feeling empowered to explore new
+              paths to prosperity. And we're thrilled to see what the next generation of AAPI Americans will bring to our
+              ever-evolving culture. At this point, we're ready to learn from you!
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -156,5 +196,6 @@
 <div id="page-transition" class="active"></div>
 <script src="../../src/scripts/transitions.js"></script>
 <script src="../../src/scripts/nav-behavior.js"></script>
+<script src="../../src/scripts/wiUJ-modal.js"></script>
 </body>
 </html>
