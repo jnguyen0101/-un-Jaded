@@ -5,6 +5,8 @@ function openModal(id) {
     setTimeout(() => {
         modal.classList.add('show');
     }, 10);
+
+    document.body.classList.add('no-scroll');
 }
 
 function closeModal(id) {
@@ -14,6 +16,8 @@ function closeModal(id) {
     setTimeout(() => {
         modal.style.display = 'none';
     }, 400);
+
+    document.body.classList.remove('no-scroll');
 }
 
 // Close if clicked outside content

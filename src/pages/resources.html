@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>(un)Jaded</title>
-  <link rel="icon" type="image/x-icon" href="assets/uj-icon.ico">
+  <link rel="icon" type="image/x-icon" href="../../assets/uj-icon.ico">
 
   <link href="https://fonts.cdnfonts.com/css/turnpike" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/ts-block" rel="stylesheet">
@@ -15,20 +15,16 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <link href="./src/css/common.css" rel="stylesheet" type="text/css">
-  <link href="./src/css/home-styles.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/common.css" rel="stylesheet" type="text/css">
+  <link href="../css/resources-styles.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-
-<div id="splash-logo">
-  <img src="assets/icon-white.PNG" alt="UJ Logo">
-</div>
 
 <!-- Navbar -->
 <header id="nav">
   <nav class="navbar">
-    <a href="./index.html" class="fade-in-fixed">
-      <img src="assets/icon-white.PNG" alt="UJ Logo" class="logo">
+    <a href="../../index.html" class="fade-in-fixed">
+      <img src="../../assets/icon-white.PNG" alt="UJ Logo" class="logo">
     </a>
     <div class="nav-links fade-in-on-load">
       <div class="dropdown">
@@ -40,8 +36,8 @@
           </svg>
         </button>
         <div class="dropdown-content">
-          <a href="src/pages/what-is-UJ.html">What is UJ?</a>
-          <a href="src/pages/current-directors.html">Current Directors</a>
+          <a href="./what-is-UJ.html">What is UJ?</a>
+          <a href="./current-directors.html">Current Directors</a>
         </div>
       </div>
       <div class="dropdown">
@@ -55,11 +51,11 @@
         <div class="dropdown-content">
           <a href="#">Join UJ</a>
           <a href="#">Family Jewels</a>
-          <a href="src/pages/calendar.html">Calendar</a>
+          <a href="./calendar.html">Calendar</a>
         </div>
       </div>
       <a href="#" class="no-drop">Workshops</a>
-      <a href="src/pages/resources.html" class="no-drop">Resources</a>
+      <a href="./resources.html" class="no-drop">Resources</a>
       <a href="#" class="no-drop">Blog</a>
     </div>
 
@@ -82,8 +78,8 @@
               </svg>
             </a>
             <ul class="hamburger-submenu">
-              <li class="ham-sub-link"><a href="src/pages/what-is-UJ.html">What is UJ?</a></li>
-              <li class="ham-sub-link"><a href="src/pages/current-directors.html">Current Directors</a></li>
+              <li class="ham-sub-link"><a href="./what-is-UJ.html">What is UJ?</a></li>
+              <li class="ham-sub-link"><a href="./current-directors.html">Current Directors</a></li>
             </ul>
           </li>
           <li class="hamburger-dropdown">
@@ -97,11 +93,11 @@
             <ul class="hamburger-submenu">
               <li class="ham-sub-link"><a href="#">Join UJ</a></li>
               <li class="ham-sub-link"><a href="#">Family Jewels</a></li>
-              <li class="ham-sub-link"><a href="src/pages/calendar.html">Calendar</a></li>
+              <li class="ham-sub-link"><a href="./calendar.html">Calendar</a></li>
             </ul>
           </li>
           <li class="hamburger-link"><a href="#">Workshops</a></li>
-          <li class="hamburger-link"><a href="src/pages/resources.html">Resources</a></li>
+          <li class="hamburger-link"><a href="./resources.html">Resources</a></li>
           <li class="hamburger-link"><a href="#">Blog</a></li>
         </ul>
       </div>
@@ -110,49 +106,10 @@
   </nav>
 </header>
 
-<!-- Hero -->
-<div class="hero-section fade-in-on-load">
-  <div class="hero-text">
-    <h3>The University of Texas at Austin</h3>
-    <h1>(un)Jaded</h1>
-    <h2>Radical wellness. Open conversation. Good work.</h2>
+<!-- Resources -->
 
-    <iframe class="spotify" data-testid="embed-iframe"
-            src="https://open.spotify.com/embed/playlist/0EHTKoktITdULo00WarvTv?utm_source=generator&theme=0"
-            width="26%" height="200" allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-
-    </iframe>
-  </div>
-</div>
-
-<!-- Description and links -->
-<div class="description-section fade-in-on-load">
-  <div class="description-wrapper">
-    <div class="info">
-      <p class="footer-description">
-        <em>(un)Jaded</em> is a mental health and service organization intended to destigmatize mental
-        health and encourage social advocacy amongst the AAPI community.
-      </p>
-    </div>
-
-    <div class="social-links">
-      <h5>Email</h5>
-      <div class="contact-info">
-        <a href="mailto:unjadedatx@gmail.com">unjadedatx@gmail.com</a>
-      </div>
-      <h5>Socials</h5>
-      <div class="social-icons">
-        <a href="https://instagram.com/unjadedatx?igshid=MmIzYWVlNDQ5Yg==" target="_blank"><i
-          class="bi bi-instagram"></i></a>
-        <a href="https://open.spotify.com/user/lnje5o1t7q1b5ejgd8rz0ab7b?si=01fbfd8ecbea45c6" target="_blank"><i
-          class="bi bi-spotify"></i></a>
-      </div>
-    </div>
-  </div>
-</div>
 <div id="page-transition" class="active"></div>
-<script src="src/scripts/transitions.js"></script>
-<script src="src/scripts/nav-behavior.js"></script>
+<script src="../../src/scripts/transitions.js"></script>
+<script src="../../src/scripts/nav-behavior.js"></script>
 </body>
 </html>
