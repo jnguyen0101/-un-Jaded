@@ -116,6 +116,7 @@ hr {
 /* Small screens */
 @media (max-width: 768px) {
     html, body {
+        min-height: 100%;
         overflow-y: visible;
     }
 
@@ -158,7 +159,7 @@ hr {
 
     .UJ-content-right {
         width: 100%;
-        height: 100dvh;
+        height: auto;
         margin-top: 0;
 
         .founder-card {
