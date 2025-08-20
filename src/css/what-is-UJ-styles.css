@@ -64,11 +64,6 @@ html, body {
         display: none;
     }
 
-    .founders :nth-child(2) img {
-        bottom: 5%;
-        right: 5%;
-    }
-
     .founder-card {
         display: inline-block;
         padding: 10px;
@@ -76,7 +71,7 @@ html, body {
 
         img {
             display: block;
-            width: 250px;
+            width: 200px;
             height: auto;
             margin-bottom: 8px;
             position: absolute;
@@ -87,12 +82,23 @@ html, body {
     }
 
     .founder-a {
-        rotate: -5deg;
+        top: 5%;
+        right: 17%;
+        rotate: -3deg;
         transition: all 0.5s ease;
     }
 
     .founder-b {
+        bottom: 6%;
+        right: 3%;
         rotate: 7deg;
+        transition: all 0.5s ease;
+    }
+
+    .founder-c {
+        bottom: 5%;
+        right: 30%;
+        rotate: -5deg;
         transition: all 0.5s ease;
     }
 
@@ -105,6 +111,28 @@ html, body {
         .founder-b:hover {
             rotate: 0deg;
             transition: all 0.5s ease;
+        }
+
+        .founder-c:hover {
+            rotate: 0deg;
+            transition: all 0.5s ease;
+        }
+    }
+
+    @media (orientation: portrait) {
+        .founder-a {
+            top: 5%;
+            right: 17%;
+        }
+
+        .founder-b {
+            bottom: 40%;
+            right: 15%;
+        }
+
+        .founder-c {
+            bottom: 5%;
+            right: 16%;
         }
     }
 }
@@ -258,6 +286,10 @@ hr {
 }
 
 #kai-linModal .modal-content {
+    background-position: center;
+}
+
+#jannelModal .modal-content {
     background-position: bottom;
 }
 
