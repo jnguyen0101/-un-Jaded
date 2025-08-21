@@ -17,7 +17,7 @@
     h1 {
         color: white;
         font-family: "TS Block Bold", serif;
-        font-size: 48px;
+        font-size: 3vw;
         margin: 0 340px;
         text-shadow: 0 0 3px white;
     }
@@ -25,7 +25,7 @@
     p {
         color: white;
         font-family: "Rubik", sans-serif;
-        font-size: 16px;
+        font-size: 1.25vw;
         margin: 0 340px;
         text-shadow: 0 0 3px white;
     }
@@ -33,7 +33,7 @@
 
 .join-us-button {
     font-family: "Rubik", serif;
-    font-size: 24px;
+    font-size: 1.3vw;
     font-weight: bold;
     width: 200px;
     height: 50px;
@@ -202,78 +202,6 @@
     }
 }
 
-/* Small screens */
-@media (max-width: 768px) {
-    .join-us {
-        justify-content: flex-start;
-        padding-top: 100px;
-        gap: 25px;
-
-        h1 {
-            font-size: 3.5vh;
-            margin: 0 32px;
-            text-shadow: 0 0 2px white;
-        }
-
-        p {
-            font-size: 2vh;
-            text-shadow: 0 0 1px white;
-            margin: 0 36px;
-        }
-
-        .join-us-button {
-            font-size: 2vh;
-            width: 160px;
-            height: 40px;
-        }
-    }
-
-    .join-right,
-    .join-left {
-        .dragon-image,
-        .swing-image,
-        .group-image {
-            display: none;
-        }
-
-        .image-container-tea {
-            top: 58%;
-            left: 5%;
-        }
-
-        .tea-image {
-            height: 18vh;
-            width: auto;
-            top: 20px;
-            left: 20px;
-        }
-
-        .image-container-pumpkin {
-            top: 73%;
-            left: 60%;
-        }
-
-        .pumpkin-image {
-            height: 15vh;
-            width: auto;
-            bottom: 20px;
-            right: 20px;
-        }
-
-        .image-container-milk-tea {
-            top: 53%;
-            right: 5%;
-        }
-
-        .milk-tea-image {
-            height: 12vh;
-            width: auto;
-            top: 20px;
-            right: 20px;
-        }
-    }
-}
-
 @media (orientation: portrait) {
     .join-us {
         justify-content: flex-start;
@@ -336,6 +264,78 @@
 
         .milk-tea-image {
             height: 15vh;
+            width: auto;
+            top: 20px;
+            right: 20px;
+        }
+    }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+    .join-us {
+        justify-content: flex-start;
+        padding-top: 100px;
+        gap: 25px;
+
+        h1 {
+            font-size: 3.5vh;
+            margin: 0 32px;
+            text-shadow: 0 0 2px white;
+        }
+
+        p {
+            font-size: 2vh;
+            text-shadow: 0 0 1px white;
+            margin: 0 36px;
+        }
+
+        .join-us-button {
+            font-size: 2vh;
+            width: 160px;
+            height: 40px;
+        }
+    }
+
+    .join-right,
+    .join-left {
+        .dragon-image,
+        .swing-image,
+        .group-image {
+            display: none;
+        }
+
+        .image-container-tea {
+            top: 58%;
+            left: 5%;
+        }
+
+        .tea-image {
+            height: 18vh;
+            width: auto;
+            top: 20px;
+            left: 20px;
+        }
+
+        .image-container-pumpkin {
+            top: 73%;
+            left: 58%;
+        }
+
+        .pumpkin-image {
+            height: 15vh;
+            width: auto;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .image-container-milk-tea {
+            top: 53%;
+            right: 5%;
+        }
+
+        .milk-tea-image {
+            height: 12vh;
             width: auto;
             top: 20px;
             right: 20px;
