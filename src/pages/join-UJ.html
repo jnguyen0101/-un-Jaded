@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join UJ | (un)Jaded</title>
+  <link rel="icon" type="image/x-icon" href="../../assets/uj-icon.ico">
+
+  <link href="https://fonts.cdnfonts.com/css/turnpike" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/ts-block" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="../css/common.css" rel="stylesheet" type="text/css">
+  <link href="../css/join-UJ-styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<!-- Navbar -->
+<header id="nav">
+  <nav class="navbar">
+    <a href="../../index.html" class="fade-in-fixed">
+      <img src="../../assets/icon-white.PNG" alt="UJ Logo" class="logo">
+    </a>
+    <div class="nav-links fade-in-on-load">
+      <div class="dropdown">
+        <button class="dropbtn">
+          About Us
+          <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9l6 6 6-6"/>
+          </svg>
+        </button>
+        <div class="dropdown-content">
+          <a href="./what-is-UJ.html">What is UJ?</a>
+          <a href="./current-directors.html">Current Directors</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Get Involved
+          <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9l6 6 6-6"/>
+          </svg>
+        </button>
+        <div class="dropdown-content">
+          <a href="./join-UJ.html">Join UJ</a>
+          <a href="#">Family Jewels</a>
+          <a href="./calendar.html">Calendar</a>
+        </div>
+      </div>
+      <a href="#" class="no-drop">Workshops</a>
+      <a href="./resources.html" class="no-drop">Resources</a>
+    </div>
+
+    <!-- Small screens -->
+    <div class="hamburger-wrapper">
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div id="sideMenu" class="side-menu">
+        <div class="menu-separator"></div>
+        <ul>
+          <li class="hamburger-dropdown">
+            <a href="#" onclick="toggleHamburgerDropdown(event)">
+              About Us
+              <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </a>
+            <ul class="hamburger-submenu">
+              <li class="ham-sub-link"><a href="./what-is-UJ.html">What is UJ?</a></li>
+              <li class="ham-sub-link"><a href="./current-directors.html">Current Directors</a></li>
+            </ul>
+          </li>
+          <li class="hamburger-dropdown">
+            <a href="#" onclick="toggleHamburgerDropdown(event)">
+              Get Involved
+              <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </a>
+            <ul class="hamburger-submenu">
+              <li class="ham-sub-link"><a href="./join-UJ.html">Join UJ</a></li>
+              <li class="ham-sub-link"><a href="#">Family Jewels</a></li>
+              <li class="ham-sub-link"><a href="./calendar.html">Calendar</a></li>
+            </ul>
+          </li>
+          <li class="hamburger-link"><a href="#">Workshops</a></li>
+          <li class="hamburger-link"><a href="./resources.html">Resources</a></li>
+        </ul>
+      </div>
+      <div id="menuOverlay" class="menu-overlay"></div>
+    </div>
+  </nav>
+</header>
+
+<!-- Join UJ -->
+<div class="join-UJ-section fade-in-on-load">
+  <div class="join-left">
+    <div class="image-container-tea">
+      <img src="../../assets/UJ-photos/tea.png" alt="" class="tea-image">
+    </div>
+    <div class="image-container-pumpkin">
+      <img src="../../assets/UJ-photos/pumpkin.PNG" alt="" class="pumpkin-image">
+    </div>
+    <div class="image-container-dragon">
+      <img src="../../assets/UJ-photos/dragon.PNG" alt="" class="dragon-image">
+    </div>
+  </div>
+  <div class="join-us">
+    <h1>Become a Member of (un)Jaded</h1>
+    <p>Be part of a community of students focused on well-being, growth, and authentic connection at UT Austin.</p>
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLScDUAH832v8FqA9K4tlE94KK-sJN4tic1qtaGVXZbyTBOvbjw/viewform?usp=header"
+      target="_blank">
+      <button class="join-us-button zoom-out">Join Us</button>
+    </a>
+  </div>
+  <div class="join-right">
+    <div class="image-container-milk-tea">
+      <img src="../../assets/UJ-photos/milk-tea.PNG" alt="" class="milk-tea-image">
+    </div>
+    <div class="image-container-swing">
+      <img src="../../assets/UJ-photos/swing.PNG" alt="" class="swing-image">
+    </div>
+    <div class="image-container-group">
+      <img src="../../assets/UJ-photos/group.PNG" alt="" class="group-image">
+    </div>
+  </div>
+</div>
+
+<div id="page-transition" class="active"></div>
+<script src="../../src/scripts/transitions.js"></script>
+<script src="../../src/scripts/nav-behavior.js"></script>
+</body>
+</html>
