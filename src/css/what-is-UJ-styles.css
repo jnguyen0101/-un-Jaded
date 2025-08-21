@@ -148,10 +148,6 @@ hr {
         overflow-y: visible;
     }
 
-    .no-scroll {
-        overflow: hidden;
-    }
-
     .what-is-UJ-section {
         flex-direction: column;
         height: auto;

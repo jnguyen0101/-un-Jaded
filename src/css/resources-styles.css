@@ -2,11 +2,12 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: visible;
+    overflow-y: visible;
 }
 
 .resources-section {
-    background-color: #e8e5dc;
+    background: url("../../assets/cream-background.jpg") no-repeat center center fixed;
+    background-size: cover;
     max-width: 100vw;
     padding: 40px 40px;
     height: auto;
@@ -27,19 +28,22 @@ h1 {
 }
 
 .resource-box {
-    border: 5px solid #2F5249;
+    border: 4px solid #2F5249;
     padding: 20px;
-    border-radius: 8px;
-    background: white;
     display: flex;
     align-items: flex-start;
     gap: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .resource-logo img {
     height: 120px;
     width: 120px;
-    border: 4px solid #2F5249;
+    border: 3px solid #2F5249;
     border-radius: 8px;
 }
 
