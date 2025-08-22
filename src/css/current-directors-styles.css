@@ -47,6 +47,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
+    row-gap: 50px;
 }
 
 /* 2-3-2 layout */
@@ -166,6 +167,7 @@ h3 {
 
     .directors {
         grid-template-columns: repeat(11, 1fr);
+        row-gap: 20px;
     }
 
     h1 {
@@ -227,8 +229,8 @@ h3 {
     }
 
     .director-image {
-        height: 120px;
-        width: 120px;
+        height: 13vw;
+        width: 13vw;
     }
 }
 
