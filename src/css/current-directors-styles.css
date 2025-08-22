@@ -5,10 +5,10 @@ html, body {
 }
 
 .directors-section {
-    background-color: #e8e5dc;
+    background: url("../../assets/painted-beige-background.jpg") no-repeat center center fixed;
+    background-size: cover;
     max-width: 100vw;
-    padding: 40px 40px;
-    min-height: calc(100vh - 81px);
+    padding: 40px 40px 200px;
     height: auto;
 }
 
@@ -18,6 +18,7 @@ h1 {
     text-align: center;
     margin-bottom: 48px;
     color: #2F5249;
+    text-shadow: 0 0 2px #2F5249;
 }
 
 h3 {
@@ -35,7 +36,7 @@ h3 {
     flex-direction: column;
     justify-content: space-around;
     padding-right: 50px;
-    margin-left: -20px;
+    margin-left: -10px;
     font-weight: bold;
     font-family: "Alegreya Sans SC", serif;
     font-size: 24px;
@@ -104,10 +105,59 @@ h3 {
     display: none;
 }
 
+/* Tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+    .tooltip-text {
+        visibility: hidden;
+        opacity: 0;
+        width: 300px;
+        background: rgba(255, 255, 255, 0.75);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid #2F5249;
+        color: black;
+        text-align: left;
+        padding: 12px;
+        top: 0;
+        left: 50%;
+        line-height: 1.5;
+        position: absolute;
+        z-index: 10;
+        transform: translateX(-50%);
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+
+        p {
+            font-family: "Rubik", serif;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+
+    .ruchi {
+        left: 100%;
+    }
+
+    .savannah {
+        left: 5%;
+    }
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
 /* Medium screens */
 @media (max-width: 1024px) {
     .directors-section {
         min-height: calc(100vh - 60px);
+        padding-bottom: 300px;
     }
 
     .departments {
@@ -184,6 +234,10 @@ h3 {
 
 /* Small screens */
 @media (max-width: 767px) {
+    .directors-section {
+        padding-bottom: 50px;
+    }
+
     .directors-sm {
         display: block;
     }
@@ -195,6 +249,7 @@ h3 {
     h1 {
         font-size: 24px;
         padding-top: 20px;
+        text-shadow: 0 0 1px #2F5249;
     }
 
     h3 {
@@ -210,15 +265,36 @@ h3 {
     }
 
     .director-sm {
-        margin-bottom: 30px;
-    }
-
-    .director-sm {
         font-family: "Rubik", serif;
         text-align: center;
+        margin-bottom: 30px;
+        position: relative;
 
         .name {
             font-weight: bold;
         }
+
+        .tooltip-text {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: opacity 0.3s ease, max-height 0.3s ease;
+            padding: 0 12px;
+            margin-top: 8px;
+            font-size: 0.95rem;
+            line-height: 1.4;
+            background: rgba(255, 255, 255, 0.75);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid #2F5249;
+        }
+    }
+
+    .director-sm.active .tooltip-text {
+        max-height: 600px;
+        opacity: 1;
+        padding: 12px;
     }
 }

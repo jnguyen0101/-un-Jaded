@@ -229,9 +229,9 @@
 
     .join-right,
     .join-left {
-        .dragon-image,
-        .swing-image,
-        .group-image {
+        .image-container-dragon,
+        .image-container-swing,
+        .image-container-group {
             display: none;
         }
 
@@ -305,9 +305,9 @@
 
     .join-right,
     .join-left {
-        .dragon-image,
-        .swing-image,
-        .group-image {
+        .image-container-dragon,
+        .image-container-swing,
+        .image-container-group {
             display: none;
         }
 
