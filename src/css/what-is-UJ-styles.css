@@ -83,21 +83,21 @@ html, body {
 
     .founder-a {
         top: 5%;
-        right: 18%;
+        right: 16%;
         rotate: -3deg;
         transition: all 0.5s ease;
     }
 
     .founder-b {
-        bottom: 8%;
+        bottom: 12%;
         right: 3%;
         rotate: 7deg;
         transition: all 0.5s ease;
     }
 
     .founder-c {
-        bottom: 7%;
-        right: 30%;
+        bottom: 10%;
+        right: 28%;
         rotate: -5deg;
         transition: all 0.5s ease;
     }
