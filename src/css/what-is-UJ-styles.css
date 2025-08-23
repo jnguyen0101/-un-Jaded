@@ -14,7 +14,7 @@ html, body {
 }
 
 .UJ-squiggly-divider svg {
-    height: 100%;
+    height: calc(100% + 1px);
     width: 10vw;
     display: block;
     position: absolute;
@@ -31,7 +31,7 @@ html, body {
     width: 55%;
     background: url("../../assets/jade-green-watercolor.jpg") no-repeat center center;
     background-size: cover;
-    max-height: calc(100vh - 81px);
+    max-height: none;
 }
 
 .UJ-info {
@@ -43,6 +43,7 @@ html, body {
         font-family: "TS Block Bold", serif;
         font-size: 2.5rem;
         text-shadow: 0 0 3px white;
+        padding-top: 50px;
     }
 
     p {
@@ -57,7 +58,7 @@ html, body {
 .UJ-content-right {
     width: 45%;
     padding: 2rem;
-    max-height: calc(100vh - 81px);
+    max-height: none;
     background-color: #e8e5dc;
 
     h1 {
@@ -139,6 +140,61 @@ html, body {
 
 hr {
     opacity: 0;
+}
+
+.section-divider {
+    border-bottom: 3px solid #4a3f35;
+}
+
+.our-values {
+    height: auto;
+    background: url("../../assets/leaf-white-background.jpg") no-repeat top right;
+    background-size: cover;
+    padding: 40px 100px;
+    font-family: "Rubik", serif;
+
+    h2 {
+        font-size: 40px;
+        padding-bottom: 24px;
+        font-weight: normal;
+    }
+
+    h4 {
+        font-family: "Alegreya Sans SC", serif;
+        color: #2F5249;
+    }
+
+    ul {
+        font-size: 16px;
+        font-weight: normal;
+        list-style: none;
+        line-height: 24px;
+        margin-left: -40px;
+    }
+
+    li {
+        padding-bottom: 16px;
+    }
+
+    li:before {
+        content: "+";
+        margin-right: 4px;
+    }
+}
+
+.values-container {
+    display: flex;
+    gap: 100px;
+}
+
+@media (orientation: portrait) {
+    .our-values {
+        padding: 40px 80px;
+    }
+
+    .values-container {
+        display: block;
+    }
 }
 
 /* Small screens */
@@ -231,6 +287,23 @@ hr {
         font-size: 1.5em;
         padding: 0 0.25em;
         background: #e8e5dc;
+    }
+
+    .section-divider {
+        display: none;
+    }
+
+    .our-values {
+        padding: 40px;
+        background: url("../../assets/leaf-white-background.jpg") no-repeat bottom right;
+
+        h2 {
+            font-size: 32px;
+        }
+    }
+
+    .values-container {
+        display: block;
     }
 }
 
