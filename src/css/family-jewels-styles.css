@@ -7,15 +7,19 @@ html, body {
     background: url("../../assets/jewels-background.jpg") no-repeat center center fixed;
     background-size: cover;
     height: auto;
-    min-height: 100dvh;
-    padding: 40px 40px;
+    min-height: calc(100vh - 81px);
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
     font-family: "TS Block Bold", serif;
-    font-size: 3vw;
+    font-size: 48px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 100px;
     margin-top: 0;
     margin-bottom: 16px;
     color: white;
@@ -24,7 +28,7 @@ h1 {
 
 h3 {
     font-family: "Alegreya Sans SC", serif;
-    font-size: 1.5vw;
+    font-size: 24px;
     padding-bottom: 36px;
     color: white;
     text-shadow: 0 0 3px white;
@@ -116,13 +120,77 @@ h3 {
     }
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 50px;
+}
+
+.fam-button {
+    font-family: "Rubik", serif;
+    font-size: 20px;
+    font-weight: bold;
+    width: auto;
+    height: 40px;
+    white-space: nowrap;
+    padding: 0 24px;
+    border: white solid 2px;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+@media (hover: hover) {
+    .fam-button:hover {
+        cursor: pointer;
+    }
+
+    .zoom-out {
+        transition: 0.5s;
+    }
+
+    .zoom-out:hover {
+        transform: scale(1.05);
+    }
+}
+
 /* Small screens */
 @media (max-width: 768px) {
+    .family-jewels-section {
+        min-height: calc(100vh - 60px);
+    }
+
     h1 {
-        text-shadow: 0 0 2px white;
+        font-size: 40px;
+        text-shadow: 0 0 3px white;
     }
 
     h3 {
-        text-shadow: 0 0 1px white;
+        font-size: 24px;
+        text-shadow: 0 0 2px white;
+    }
+
+    .fam-button {
+        font-size: 16px;
+    }
+    .card-container {
+        display: block;
+    }
+
+    .card {
+        width: 250px;
+        height: 350px;
+        margin-bottom: 50px;
+    }
+
+    .card-front, .card-back {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    }
+
+    .card-back {
+        font-size: 12px;
     }
 }
