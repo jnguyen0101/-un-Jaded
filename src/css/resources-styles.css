@@ -11,6 +11,7 @@ html, body {
     max-width: 100vw;
     padding: 40px 40px;
     height: auto;
+    min-height: calc(100dvh - 81px);
 }
 
 h1 {
@@ -26,6 +27,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
+    align-items: stretch;
 }
 
 .resource-box {
@@ -50,25 +52,27 @@ h1 {
 
 .resource-content {
     font-family: "Rubik", serif;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+}
 
-    a {
-        color: #0a6636;
-        font-weight: bold;
-        text-decoration: none;
-    }
+.resource-content a {
+    color: #0a6636;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
 
-    h3 {
-        font-size: 20px;
-    }
+.resource-content h3 {
+    font-size: 20px;
+}
 
-    p {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    a {
-        font-size: 16px;
-    }
+.resource-content p {
+    font-size: 16px;
+    line-height: 24px;
+    flex-grow: 1;
 }
 
 @media (hover: hover) {
@@ -116,5 +120,14 @@ h1 {
         a {
             font-size: 14px;
         }
+    }
+}
+
+/* Small screens/portrait mode */
+@media (max-width: 768px) or (orientation: portrait) {
+    .resource-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
