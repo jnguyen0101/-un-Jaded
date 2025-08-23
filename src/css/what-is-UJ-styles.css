@@ -3,7 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
+    overflow-y: visible;
 }
 
 .what-is-UJ-section {
@@ -131,7 +131,7 @@ html, body {
         }
 
         .founder-c {
-            bottom: 5%;
+            bottom: 10%;
             right: 16%;
         }
     }
