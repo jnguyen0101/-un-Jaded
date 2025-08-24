@@ -1,0 +1,138 @@
+html, body {
+    height: 100%;
+    overflow-y: visible;
+}
+
+.wp-section {
+    background: url("../../assets/green-painted-background.jpg") no-repeat center center;
+    background-size: cover;
+    height: auto;
+    padding: 40px 80px 60px;
+
+    h1 {
+        font-family: "TS Block Bold", serif;
+        font-size: 42px;
+        padding-top: 80px;
+        color: white;
+        text-shadow: 0 0 3px white;
+    }
+
+    h3 {
+        font-family: "Rubik", serif;
+        font-size: 20px;
+        color: white;
+        text-shadow: 0 0 2px white;
+    }
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 15vw;
+    padding-top: 60px;
+}
+
+.description-box {
+    text-align: center;
+
+    img {
+        width: 250px;
+        height: auto;
+    }
+
+    h4 {
+        font-family: "Alegreya Sans SC", serif;
+        font-size: 24px;
+        text-align: center;
+        color: white;
+        text-shadow: 0 0 2px white;
+    }
+
+    p {
+        font-family: "Rubik", serif;
+        font-size: 16px;
+        text-align: center;
+        color: white;
+        text-shadow: 0 0 1px white;
+    }
+}
+
+.past-workshops-section {
+    background: #16423C;
+    height: auto;
+    padding: 40px 80px;
+
+    h1 {
+        font-family: "TS Block Bold", serif;
+        font-size: 42px;
+        padding: 40px 0 60px;
+        color: white;
+        text-shadow: 0 0 3px white;
+        text-align: center;
+    }
+}
+
+.workshop {
+    display: flex;
+}
+
+.workshop-image {
+    width: 40vw;
+    height: 20vw;
+    padding-bottom: 50px;
+}
+
+.workshop-info {
+    color: white;
+    padding-right: 60px;
+    font-family: "Rubik", serif;
+
+    h4 {
+        font-weight: bold;
+        font-size: 24px;
+        text-shadow: 0 0 2px white;
+    }
+
+    p {
+        font-size: 16px;
+        text-shadow: 0 0 1px white;
+    }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+    .wp-section {
+        padding: 40px;
+
+        h1 {
+            font-size: 6.5vw;
+            text-shadow: 0 0 2px white;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 4vw;
+            text-shadow: 0 0 1px white;
+            text-align: center;
+        }
+    }
+
+    .box-container {
+        flex-direction: column;
+    }
+
+    .description-box {
+        img {
+            width: 150px;
+            height: auto;
+        }
+
+        h4 {
+            font-size: 5vw;
+        }
+
+        p {
+            font-size: 4vw;
+        }
+    }
+}

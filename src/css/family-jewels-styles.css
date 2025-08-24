@@ -4,7 +4,7 @@ html, body {
 }
 
 .family-jewels-section {
-    background: url("../../assets/jewels-background.jpg") no-repeat center center fixed;
+    background: url("../../assets/jewels-background.jpg") no-repeat center center;
     background-size: cover;
     height: auto;
     min-height: calc(100vh - 81px);
@@ -130,6 +130,7 @@ h3 {
     font-family: "Rubik", serif;
     font-size: 20px;
     font-weight: bold;
+    text-shadow: 0 0 2px white;
     width: auto;
     height: 40px;
     white-space: nowrap;
@@ -175,6 +176,7 @@ h3 {
 
     .fam-button {
         font-size: 16px;
+        text-shadow: 0 0 1px white;
     }
     .card-container {
         display: block;
