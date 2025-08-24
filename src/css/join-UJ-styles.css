@@ -13,7 +13,6 @@
     align-items: center;
     text-align: center;
     gap: 50px;
-    padding-bottom: 100px;
 
     h1 {
         color: white;
@@ -29,6 +28,22 @@
         font-size: 1.25vw;
         margin: 0 340px;
         text-shadow: 0 0 3px white;
+    }
+
+    ul {
+        font-family: "Rubik", serif;
+        color: white;
+        text-shadow: 0 0 2px white;
+        font-size: 0.75vw;
+        font-weight: normal;
+        list-style: none;
+        margin: -32px 350px 0 320px;
+        text-align: start;
+    }
+
+    li:before {
+        content: "+";
+        margin-right: 4px;
     }
 }
 
@@ -211,19 +226,24 @@
         gap: 32px;
 
         h1 {
-            font-size: 4.5vh;
+            font-size: 4vh;
             margin: 0 32px;
             text-shadow: 0 0 2px white;
         }
 
         p {
-            font-size: 2.5vh;
+            font-size: 2vh;
             text-shadow: 0 0 1px white;
             margin: 0 36px;
         }
 
         .join-us-button {
-            font-size: 2vh;
+            font-size: 1.5vh;
+        }
+
+        ul {
+            margin: 0 -50px;
+            font-size: 12px;
         }
     }
 
@@ -301,47 +321,41 @@
             width: 160px;
             height: 40px;
         }
+
+        ul {
+            font-size: 10px;
+            padding: 0 40px;
+        }
     }
 
     .join-right,
     .join-left {
         .image-container-dragon,
         .image-container-swing,
-        .image-container-group {
+        .image-container-group,
+        .image-container-tea {
             display: none;
         }
 
-        .image-container-tea {
-            top: 58%;
-            left: 5%;
+        .image-container-pumpkin {
+            top: 65%;
+            left: 7%;
         }
 
-        .tea-image {
-            height: 18vh;
+        .pumpkin-image {
+            height: 16vh;
             width: auto;
             top: 20px;
             left: 20px;
         }
 
-        .image-container-pumpkin {
-            top: 73%;
-            left: 58%;
-        }
-
-        .pumpkin-image {
-            height: 15vh;
-            width: auto;
-            bottom: 20px;
-            right: 20px;
-        }
-
         .image-container-milk-tea {
-            top: 53%;
-            right: 5%;
+            top: 63%;
+            right: 7%;
         }
 
         .milk-tea-image {
-            height: 12vh;
+            height: 13vh;
             width: auto;
             top: 20px;
             right: 20px;
