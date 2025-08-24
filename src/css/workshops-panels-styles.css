@@ -91,10 +91,25 @@ html, body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top;
     border: 3px solid white;
     border-radius: 10px;
     box-shadow: 0 0 25px 3px rgba(255, 255, 255, 0.25);
+}
+
+#workshop-1 img {
+    object-position: top;
+}
+
+#workshop-2 img {
+    object-position: top;
+}
+
+#workshop-3 img {
+    object-position: center;
+}
+
+#workshop-4 img {
+    object-position: center;
 }
 
 .view-slides-button {
@@ -266,17 +281,17 @@ html, body {
     }
 
     #workshop-2-sm {
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://s3.amazonaws.com/sitebuilderreport-assets/stock_photos/files/000/052/178/small/landscape-of-brown-grass-with-rocky-mountains.jpg?1631554286") no-repeat center center;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/workshop/friendship.jpeg") no-repeat center center;
         background-size: cover;
     }
 
     #workshop-3-sm {
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://s3.amazonaws.com/sitebuilderreport-assets/stock_photos/files/000/052/181/small/woman-and-two-children-stand-in-a-gold-colored-field.jpg?1631554288") no-repeat center center;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/workshop/language.jpeg") no-repeat center center;
         background-size: cover;
     }
 
     #workshop-4-sm {
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/workshop/friendship.jpeg") no-repeat center center;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/workshop/masculinity.jpeg") no-repeat center center;
         background-size: cover;
     }
 }
