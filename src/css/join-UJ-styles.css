@@ -1,3 +1,7 @@
+html, body {
+    overflow-y: visible;
+}
+
 .join-UJ-section {
     display: flex;
     background: url("../../assets/close-up-wet-leaves.jpg") no-repeat center center;

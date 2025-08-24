@@ -138,7 +138,7 @@ html, body {
     }
 }
 
-hr {
+.UJ-content-right hr {
     opacity: 0;
 }
 
@@ -269,7 +269,7 @@ hr {
         display: none;
     }
 
-    hr {
+    .UJ-content-right hr {
         opacity: 1;
         overflow: visible;
         padding: 0;
@@ -279,7 +279,7 @@ hr {
         text-align: center;
     }
 
-    hr:after {
+    .UJ-content-right hr:after {
         content: "𖡼";
         display: inline-block;
         position: relative;
