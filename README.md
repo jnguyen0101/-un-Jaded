@@ -1,6 +1,7 @@
 # (un)Jaded
 
 ![Cloudflare Pages](https://img.shields.io/badge/Deployed%20with-Cloudflare%20Pages-F38020?logo=cloudflare&logoColor=white)
+[![Website](https://img.shields.io/badge/Visit-unjadedatx.com-255F38?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.unjadedatx.com)
 
 This repository contains the official code for **(un)Jaded**, a student organization at the University of Texas at Austin focused on mental health and social advocacy.
 
