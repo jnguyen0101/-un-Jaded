@@ -121,9 +121,17 @@ h3 {
 }
 
 .button-container {
-    display: flex;
+    display: block;
     justify-content: center;
+    text-align: center;
     padding: 100px 0 50px;
+}
+
+.button-container p {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    text-shadow: 0 0 3px white;
 }
 
 .fam-button {
