@@ -33,4 +33,6 @@ git push origin main
 ```
 2. Cloudflare Pages will automatically rebuild and deploy the site.
 
+---
+
 © 2025 (un)Jaded at The University of Texas at Austin
