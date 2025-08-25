@@ -186,6 +186,11 @@ h3 {
         font-size: 16px;
         text-shadow: 0 0 1px white;
     }
+
+    .button-container p{
+        font-size: 16px;
+    }
+
     .card-container {
         display: block;
     }
